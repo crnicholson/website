@@ -12,7 +12,7 @@ export default function Hero() {
                         Hi. I{"'"}m Charlie Nicholson.
                     </h1>
                     <p className="text-2xl font-light text-[#0d1b2a]">
-                        I'm an engineer of all sorts.
+                        I{"'"}m an engineer of all sorts.
                     </p>
                 </div>
                 <div className="h-[10%] flex flex-col justify-center items-center">
