@@ -16,9 +16,10 @@ export default function Footer() {
                 <p>Made with Next.js. Hosted by Vercel. Licensed under MIT.</p>
                 <p>© 2024 Charles Nicholson.</p>
             </div> */}
-            <div className="p-10 flex flex-col justify-center items-center border-2 border-dashed border-black bg-gray-300">
-                <p>Made with Next.js. Hosted by Vercel. Licensed under MIT.</p>
-                <p>© 2024 Charles Nicholson.</p>
+            
+            <div className="p-5 flex flex-col justify-center items-center bg-transparent text-gray-600 text-sm">
+                <p>Made with Next.js. Hosted by Vercel. Licensed under MIT. © 2024 Charles Nicholson.</p>
+                
             </div>
         </>
     );

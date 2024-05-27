@@ -8,7 +8,7 @@ interface TextProps {
 
 export default function Text(props: TextProps) {
     return (
-        <div className="">
+        <div className="relative">
             <h1 id={props.name} className="text-6xl font-bold pb-5 pt-5">{props.title}</h1>
             {props.content}
             <br />

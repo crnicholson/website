@@ -2,6 +2,7 @@ import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Text from "../components/text";
 import Projects from "../components/projects";
+import GradientBlur from "../components/gradientBlur";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
             />
             <h1 className="text-6xl font-bold pb-5 pt-5">Projects</h1>
             <div className="flex flex-wrap justify-center items-center">
+
               <Projects
                 title="StratoSoar"
                 name="projects"
@@ -56,6 +58,7 @@ export default function Home() {
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
               />
+
               <Projects
                 title="StratoSoar"
                 name=""
@@ -63,6 +66,7 @@ export default function Home() {
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
               />
+
               <Projects
                 title="StratoSoar"
                 name=""
