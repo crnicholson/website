@@ -15,7 +15,7 @@ export default function Hero() {
                             My Story
                         </a> */}
                         <a href="#projects" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
-                            What I've Done
+                            What I{"'"}ve Done
                         </a>
                         {/*                         
                         <a href="#timeline" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">

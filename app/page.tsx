@@ -6,14 +6,20 @@ import Projects from "../components/projects";
 export default function Home() {
   return (
     <>
-      <div className="font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose">
+      <div className="relative font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose">
+        {/* <div className="absolute inset-0 z-10">
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full blur-lg animate-pulse-custom opacity-50 md:w-64 md:h-64"></div>
+          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-r from-blue-500 to-green-500 rounded-full blur-lg animate-pulse-custom opacity-50 md:w-48 md:h-48"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-20 h-20 bg-gradient-to-r from-red-500 to-purple-500 rounded-full blur-lg animate-pulse-custom opacity-50 md:w-40 md:h-40"></div>
+        </div>
+         */}
         <Hero />
         <main className="flex justify-center pb-10 pt-20 z-20 relative mt-[150px]">
-          <div className="w-3/5 sm:w-5/6">
+          <div className="w-5/6 sm:w-3/5">
             <Text
               title="About"
               content={<>
-                <p>Hi. My name is Charlie. I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I'm not in my bedroom lab, you can find me running and enjoying nature.</p>
+                <p>Hi. My name is Charlie. I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I{"'"}m not in my bedroom lab, you can find me running and enjoying nature.</p>
               </>}
               name="about"
             />
