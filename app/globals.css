@@ -12,6 +12,11 @@
   src: url("/Heming Variable.ttf")
 }
 
+@font-face{
+  font-family: "poppins";
+  src: url("/Poppins-Regular.ttf")
+} 
+
 html,
 body {
   height: 100%;
@@ -24,4 +29,8 @@ html {
 
 #slash {
   transform: skew(40deg);
+}
+
+#footer {
+  transform: skew(-85deg);
 }
