@@ -185,7 +185,7 @@ export default function Slider() {
         { src: "hamRadio.jpeg", alt: "Ham radio" },
         { src: "balloon.jpeg", alt: "Balloon" },
         { src: "drugs.jpeg", alt: "Chemistry" },
-        { src: "Fusion.jpeg", alt: "Fusion 360" },
+        { src: "fusion.png", alt: "Fusion 360" },
         { src: "boardIRL.png", alt: "PCB" },
         { src: "resp.jpeg", alt: "Respirator" },
         { src: "3d.png", alt: "3D" },
@@ -196,17 +196,25 @@ export default function Slider() {
     ];
 
     return (
-        <div className="overflow-x-hidden w-full max-w-full mx-auto pb-10">
-            <div className="scrolling-wrapper">
-                {images.concat(images).map((image, index) => (
-                    <div key={index} className="carousel-item bg-transparent">
-                        <Image
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                    </div>
-                ))}
+        <>
+            <div className="w-full flex justify-center pb-10 relative">
+                <div className="w-5/6 sm:w-3/5">
+                    <h1 className="text-6xl font-bold pb-5 pt-5">Gallery</h1>
+                    <p>It goes fast, try to catch all the images!</p>
+                </div>
             </div>
-        </div>
+            <div className="overflow-x-hidden w-full max-w-full mx-auto pb-10">
+                <div className="scrolling-wrapper">
+                    {images.concat(images).map((image, index) => (
+                        <div key={index} className="carousel-item bg-transparent">
+                            <Image
+                                src={image.src}
+                                alt={image.alt}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </>
     );
 }

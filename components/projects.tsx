@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import GradientBlur from "./gradientBlur";
 
-export default function Projects(props: { title: string; content: ReactNode; name: string }) {
+export default function Project(props: { title: string; content: ReactNode; name: string }) {
     return (
         <>
             <div className="relative flex-1 rounded-lg p-5 hover:bg-[rgb()] m-5 transform transition-transform duration-300 hover:scale-105 bg-[rgba(0,0,0,.1)] hover:shadow-2xl group h-fit w-fit">

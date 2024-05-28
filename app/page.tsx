@@ -1,7 +1,7 @@
 import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Text from "../components/text";
-import Projects from "../components/projects";
+import Project from "../components/projects";
 import GradientBlur from "../components/gradientBlur";
 import Slider from "../components/slider";
 import Box from "../components/box";
@@ -51,26 +51,30 @@ export default function Home() {
               </>}
               name="skills"
             />
+            <Text
+              title="Contact"
+              content={<>
+                <p>If you want to ask a question, discuss a partnership, or just say hi, drop me an email at <a className="underline hover:text-gray-600" href="mailto:charlienicholsonr@gmail.com">charlienicholsonr@gmail.com</a></p>
+              </>}
+              name="contact"
+            />
             <h1 className="text-6xl font-bold pb-5 pt-5">Projects</h1>
             <div className="flex flex-wrap justify-center items-center">
-
-              <Projects
+              <Project
                 title="StratoSoar"
                 name="projects"
                 content={<>
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
               />
-
-              <Projects
+              <Project
                 title="StratoSoar"
                 name=""
                 content={<>
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
               />
-
-              <Projects
+              <Project
                 title="StratoSoar"
                 name=""
                 content={<>
@@ -78,6 +82,7 @@ export default function Home() {
                 </>}
               />
             </div>
+
           </div>
         </main>
         <Slider />
