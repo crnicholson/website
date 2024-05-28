@@ -22,34 +22,9 @@ export default function Home() {
             <Text
               title="About"
               content={<>
-                <p>Hi. My name is Charlie. I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I{"'"}m not in my bedroom lab, you can find me running and enjoying nature.</p>
+                <p>Hi. My name is Charlie. I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I{"'"}m not in my bedroom lab coding and tinkering, you can find me running and enjoying nature. <a className="underline hover:text-gray-600" href="/about">Here{"'"}s more about me.</a></p>
               </>}
               name="about"
-            />
-            <Text
-              title="My Story"
-              content={<>
-                <p>I started in the world of electronics when I was 10, in the pandemic. My cousin gave me an Arduino kit from his school and I was hooked. I started with the basics, blinking an LED, and moved to more complex projects like an obstacle avoiding robot with a mop {"("}a Mopra!{")"}</p>
-                <br></br>
-                <p>Of course, it went off from there. I now am smarter and have done many projects, partnering with organizations and professional engineers. I have since branched out to other areas, including mechanical engineering and computer science.</p>
-              </>}
-              name="story"
-            />
-            <Box />
-            <Text
-              title="Skills"
-              content={<>
-                <p>I am well versed for my age, with interest and knowledge in many subjects.</p>
-                <br></br>
-                <li>Electronics: KiCAD, AVR, ARM, RF, Arduino, RPi, test equipment</li>
-                <li>Programming: C++, Python</li>
-                <li>Mechanical Engineering: Fusion 360, Simscale</li>
-                <li>Front End Web Design: Next.js, HTML, CSS, Figma</li>
-                <li>Fabrication: 3D printing, CNCs, laser cutter, handtools</li>
-                <li>Frameworks/Tools: GitHub, Git, Vercel</li>
-                <li>Other: business management, public speaking</li>
-              </>}
-              name="skills"
             />
             <Text
               title="Contact"
