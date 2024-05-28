@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import Text from "../components/text";
 import Projects from "../components/projects";
 import GradientBlur from "../components/gradientBlur";
+import Slider from "../components/slider";
 
 export default function Home() {
   return (
@@ -77,6 +78,7 @@ export default function Home() {
             </div>
           </div>
         </main>
+        <Slider />
         <Footer />
       </div>
     </>
