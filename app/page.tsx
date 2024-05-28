@@ -33,11 +33,22 @@ export default function Home() {
               </>}
               name="contact"
             />
-            <h1 className="text-6xl font-bold pb-5 pt-5">Projects</h1>
+            <h1 id="projects" className="text-6xl font-bold pb-5 pt-5">Projects</h1>
             <div className="flex flex-wrap justify-center items-center">
               <Project
                 title="StratoSoar"
-                name="projects"
+                name=""
+                image="boardIRL.png"
+                alt="PCB"
+                url="https://github.com/crnicholson/StratoSoar-MK2"
+                content={<>
+                  <p>StratoSoar is a low-power, adaptive Unmanned Aerial Vehicle (UAV), designed to be dropped from a weather balloon at approximately 10,000 feet of altitude. The main goal of StratoSoar is to fly from Point A to Point B without human interaction. GPS coordinates are selected in programming, and the glider navigates there in an efficient manner.</p>
+                </>}
+              />
+              <Project
+                title="StratoSoar"
+                name=""
+                url=""
                 content={<>
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
@@ -45,19 +56,12 @@ export default function Home() {
               <Project
                 title="StratoSoar"
                 name=""
-                content={<>
-                  <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
-                </>}
-              />
-              <Project
-                title="StratoSoar"
-                name=""
+                url=""
                 content={<>
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
               />
             </div>
-
           </div>
         </main>
         <Slider />
