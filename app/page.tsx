@@ -33,7 +33,13 @@ export default function Home() {
               </>}
               name="contact"
             />
-            <h1 id="projects" className="text-6xl font-bold pb-5 pt-5">Projects</h1>
+            <Text
+              title="Projects"
+              content={<>
+                <p>Here are some of the projects I{"'"}ve worked on. If you want to see more, head over to <a href="/more" className="underline hover:text-color-gray-600">this page.</a></p>
+              </>}
+              name="contact"
+            />
             <div className="flex flex-wrap justify-center items-center">
               <Project
                 title="StratoSoar"
@@ -49,6 +55,8 @@ export default function Home() {
                 title="StratoSoar"
                 name=""
                 url=""
+                image=""
+                alt=""
                 content={<>
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
@@ -57,6 +65,8 @@ export default function Home() {
                 title="StratoSoar"
                 name=""
                 url=""
+                image=""
+                alt=""
                 content={<>
                   <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
                 </>}
