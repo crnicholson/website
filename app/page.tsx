@@ -4,6 +4,7 @@ import Text from "../components/text";
 import Projects from "../components/projects";
 import GradientBlur from "../components/gradientBlur";
 import Slider from "../components/slider";
+import Box from "../components/box";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
               </>}
               name="story"
             />
+            <Box />
             <Text
               title="Skills"
               content={<>

@@ -31,21 +31,37 @@ html {
   transform: skew(40deg);
 }
 
- @keyframes scroll {
-   0% {
-     transform: translateX(0);
-   }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
 
-   100% {
-     transform: translateX(-100%);
-   }
- }
+  100% {
+    transform: translateX(calc(-320px * 25));
+  }
+}
 
- .scrolling-wrapper {
-   display: flex;
-   animation: scroll 4s linear infinite;
- }
+.scrolling-wrapper {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  width: calc((300px + 20px) * 25 * 2);
+  /* Adjust the width to fit all images (25 original images * 2 for duplication), include gap */
+  gap: 20px;
+  /* Set the gap between items */
+}
 
- .carousel-item {
-   flex: 0 0 20%;
- }
+.carousel-item {
+  flex: 0 0 auto;
+  /* Do not stretch/shrink */
+  width: 300px;
+  /* Set fixed width for each item */
+  margin: 0;
+  /* Ensure no extra margins are added */
+}
+
+img {
+  width: 300px;
+  /* Ensure images do not exceed 300px */
+  height: auto;
+  /* Maintain aspect ratio */
+}
