@@ -5,6 +5,7 @@ import Project from "../components/projects";
 import GradientBlur from "../components/gradientBlur";
 import Slider from "../components/slider";
 import Box from "../components/box";
+import Button from "../components/button";
 
 export default function Home() {
   return (
@@ -26,6 +27,33 @@ export default function Home() {
               </>}
               name="about"
             />
+            <div className="flex flex-row justify-center">
+              <Button
+                href="https://github.com/crnicholson"
+                text="GitHub"
+                wiggle="wiggle-one-button"
+              />
+              <Button
+                href="https://www.youtube.com/@charlienicholsonr?sub_confirmation=1"
+                text="YouTube"
+                wiggle="wiggle-three-button"
+              />
+              <Button
+                href="https://www.qrz.com/db/KC1SFR"
+                text="QRZ Page"
+                wiggle="wiggle-two-button"
+              />
+              <Button
+                href="https://linktr.ee/charlienicholson"
+                text="LinkTree"
+                wiggle="wiggle-three-button"
+              />
+              <Button
+                href="https://www.venmo.com/u/CharlieNicholsonR"
+                text="Support Me"
+                wiggle="wiggle-one-button"
+              />
+            </div>
             <Text
               title="Contact"
               content={<>
@@ -48,7 +76,7 @@ export default function Home() {
                 alt="PCB"
                 url="https://github.com/crnicholson/StratoSoar-MK2"
                 content={<>
-                  <p>StratoSoar is a low-power, adaptive Unmanned Aerial Vehicle (UAV), designed to be dropped from a weather balloon at approximately 10,000 feet of altitude. The main goal of StratoSoar is to fly from Point A to Point B without human interaction. GPS coordinates are selected in programming, and the glider navigates there in an efficient manner.</p>
+                  <p>StratoSoar is a low-power, adaptive Unmanned Aerial Vehicle (UAV), designed to be dropped from a weather balloon at approximately 10,000 feet of altitude. The main goal of StratoSoar is to fly from Point A to Point B without human interaction. GPS coordinates are selected in programming, and the glider navigates there in an efficient manner. Click to learn more.</p>
                 </>}
               />
               <Project

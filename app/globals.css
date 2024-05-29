@@ -65,3 +65,57 @@ img {
   height: auto;
   /* Maintain aspect ratio */
 }
+
+@keyframes wiggle-one {
+  0% {
+    rotate: -5deg;
+  }
+
+  50% {
+    rotate: 5deg;
+  }
+
+  100% {
+    rotate: -5deg;
+  }
+}
+
+.wiggle-one-button {
+  animation: wiggle-one 2s linear infinite;
+}
+
+@keyframes wiggle-two {
+  0% {
+    rotate: -10deg;
+  }
+
+  50% {
+    rotate: 10deg;
+  }
+
+  100% {
+    rotate: -10deg;
+  }
+}
+
+.wiggle-two-button {
+  animation: wiggle-two 5s linear infinite;
+}
+
+@keyframes wiggle-three {
+  0% {
+    rotate: -3deg;
+  }
+
+  50% {
+    rotate: 5deg;
+  }
+
+  100% {
+    rotate: -3deg;
+  }
+}
+
+.wiggle-three-button {
+  animation: wiggle-three 1s linear infinite;
+}
