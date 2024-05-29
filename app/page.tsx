@@ -27,7 +27,7 @@ export default function Home() {
               </>}
               name="about"
             />
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-wrap gap-5 mb-5 justify-center">
               <Button
                 href="https://github.com/crnicholson"
                 text="GitHub"
