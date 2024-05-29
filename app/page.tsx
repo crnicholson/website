@@ -69,7 +69,7 @@ export default function Home() {
               name="contact"
             />
             <div className="flex flex-wrap justify-center items-center">
-              <Project
+              {/* <Project
                 title="StratoSoar"
                 name=""
                 image="boardIRL.png"
@@ -78,26 +78,24 @@ export default function Home() {
                 content={<>
                   <p>StratoSoar is a low-power, adaptive Unmanned Aerial Vehicle (UAV), designed to be dropped from a weather balloon at approximately 10,000 feet of altitude. The main goal of StratoSoar is to fly from Point A to Point B without human interaction. GPS coordinates are selected in programming, and the glider navigates there in an efficient manner. Click to learn more.</p>
                 </>}
-              />
+              /> */}
               <Project
                 title="StratoSoar"
                 name=""
-                url=""
-                image=""
-                alt=""
-                content={<>
-                  <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
-                </>}
+                image="boardIRL.png"
+                alt="PCB"
+                color="[rgba(0,0,0,.4)]"
+                date="2022-"
+                url="https://github.com/crnicholson/StratoSoar-MK2"
               />
               <Project
-                title="StratoSoar"
+                title="Carbon Capture"
                 name=""
-                url=""
-                image=""
-                alt=""
-                content={<>
-                  <p>StratoSoar is a high altitude balloon project that I am working on with a group of students from around the world. We are planning to launch a balloon to the edge of space, with a payload of scientific experiments and sensors. We are currently in the planning and design phase, and are looking for sponsors and partners.</p>
-                </>}
+                image="ccProject.jpeg"
+                alt="PCB"
+                color="[rgb(0,0,0)]"
+                date="2022-2023"
+                url="https://github.com/crnicholson/StratoSoar-MK2"
               />
             </div>
           </div>
