@@ -23,7 +23,7 @@ export default function Home() {
             <Text
               title="About"
               content={<>
-                <p>Hi. My name is Charlie. I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I{"'"}m not in my bedroom lab coding and tinkering, you can find me running and enjoying nature. <a className="underline hover:text-gray-600" href="/about">Here{"'"}s more about me.</a></p>
+                <p>Hi. My name is Charlie. I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I{"'"}m not in my bedroom lab coding and tinkering, you can find me running and enjoying nature. <a className="underline hover:text-gray-600" target="_blank" href="/about">Here{"'"}s more about me.</a></p>
               </>}
               name="about"
             />
@@ -57,14 +57,14 @@ export default function Home() {
             <Text
               title="Contact"
               content={<>
-                <p>If you want to ask a question, discuss a partnership, or just say hi, drop me an email at <a className="underline hover:text-gray-600" href="mailto:charlienicholsonr@gmail.com">charlienicholsonr@gmail.com</a></p>
+                <p>If you want to ask a question, discuss a partnership, or just say hi, drop me an email at <a className="underline hover:text-gray-600" target="_blank"  href="mailto:charlienicholsonr@gmail.com">charlienicholsonr@gmail.com</a></p>
               </>}
               name="contact"
             />
             <Text
               title="Projects"
               content={<>
-                <p>Here are some of the projects I{"'"}ve worked on. If you want to see more, head over to <a href="/more" className="underline hover:text-color-gray-600">this page.</a></p>
+                <p>Here are some of the projects I{"'"}ve worked on. If you want to see more, head over to <a target="_blank"  href="/more" className="underline hover:text-color-gray-600">this page.</a></p>
               </>}
               name="contact"
             />
@@ -84,7 +84,8 @@ export default function Home() {
                 name=""
                 image="boardIRL.png"
                 alt="PCB"
-                color="[rgba(0,0,0,.4)]"
+                color="black"
+                bg="rgba(0,0,0,.1)"
                 date="2022-"
                 url="https://github.com/crnicholson/StratoSoar-MK2"
               />
@@ -93,9 +94,20 @@ export default function Home() {
                 name=""
                 image="ccProject.jpeg"
                 alt="PCB"
-                color="[rgb(0,0,0)]"
+                color="black"
+                bg="rgba(224,225,221,0.5)"
                 date="2022-2023"
-                url="https://github.com/crnicholson/StratoSoar-MK2"
+                url="https://nicholsonlabs.gitbook.io/labs/carbon-capture"
+              />
+              <Project
+                title="Ham Club"
+                name=""
+                image="hamclub.png"
+                alt="PCB"
+                color="black"
+                bg="rgba(224,225,221,0.5)"
+                date="2024"
+                url="https://ham.hackclub.com/"
               />
             </div>
           </div>

@@ -55,17 +55,17 @@
 
 
 
-export default function Project(props: { title: string; name: string; url: string; image: string; date: string; alt: string; color: string; }) {
+export default function Project(props: { title: string; name: string; url: string; image: string; date: string; alt: string; color: string; bg: string; }) {
     return (
         <>
-            <a href={props.url}>
-                <div className="relative group  m-5 transform transition-transform duration-300 hover:scale-105 bg-[rgba(0,0,0,.1)] hover:shadow-2xl h-[300px] w-fit">
+            <a href={props.url} target="_blank">
+                <div className="relative group m-5 transform transition-transform duration-300 hover:scale-105 bg-[rgba(0,0,0,.1)] hover:shadow-2xl h-[300px] w-fit">
                     <img className="rounded-lg w-fit h-[300px]" src={props.image} alt={props.title} />
-                    <div className="italic absolute inset-0 flex flex-row items-end justify-center">
-                        <h1 id={props.name} className={`mr-2 text-[16px] font-bold transition-colors duration-300 text-${props.color}`}>
+                    <div className="w-fit mx-auto p-1 rounded-2xl italic absolute bottom-0 inset-x-0 flex flex-row mb-2 justify-center items-center" style={{ backgroundColor: props.bg }}>
+                        <h1 id={props.name} className="mr-2 text-[13px] font-bold transition-colors duration-300" style={{ color: props.color }}>
                             {props.title}
                         </h1>
-                        <p className="text-[10px] border border-black text-black rounded-2xl p-[3px]">
+                        <p className="text-[8px] bg-[rgba(0,0,0,0.1)] rounded-2xl p-[3px]" style={{ color: props.color }}>
                             {props.date}
                         </p>
                     </div>
