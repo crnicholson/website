@@ -3,7 +3,7 @@ export default function Project(props: { title: string; name: string; url: strin
         <>
             <a href={props.url} target="_blank">
                 <div className="relative group rounded-lg m-5 transform transition-transform duration-300 hover:scale-105 bg-[rgba(0,0,0,.1)] hover:shadow-2xl h-[300px] w-fit">
-                    <img className="rounded-lg w-fit sm:h-[300px]" src={props.image} alt={props.title} />
+                    <img className="rounded-lg w-fit h-auto sm:h-[300px]" src={props.image} alt={props.title} />
                     <div className="w-fit mx-auto p-1 rounded-2xl italic absolute bottom-0 inset-x-0 flex flex-row mb-2 justify-center items-center" style={{ backgroundColor: props.bg }}>
                         <h1 id={props.name} className="mr-2 text-[13px] font-bold transition-colors duration-300" style={{ color: props.color }}>
                             {props.title}
