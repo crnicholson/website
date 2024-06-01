@@ -5,31 +5,17 @@ export default function Hero() {
                 <div id="slash" className="ml-[-700px] mt-[-600px] sm:ml-[-800px] absolute z-0 h-[150vh] sm:h-[115vh] sm:mt-[-20px] rounded-[800px] sm:w-[95vw] w-[90vh] bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500 rotate-3 filter opacity-[50%] blur-3xl sm:blur-lg md:ml-[-800px]" style={{ background: 'linear-gradient(60deg, #ff9e00, #ff165d, #ff38ef, #3a1c71, #d76d77, #ffaf7b)' }}></div>
                 <div className="relative z-10 h-screen flex flex-col sm:px-10">
                     <div className="invisible sm:visible h-[5%] sm:h-[10%] flex flex-row items-center justify-end pr-2">
-                        <a href="#about" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
+                        <a href="#about" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
                             About
                         </a>
-                        {/* <a href="#skills" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
-                            Skills
-                        </a>
-                        <a href="#story" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
-                            My Story
-                        </a> */}
-                        <a href="#projects" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
+                        <a href="#projects" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
                             What I{"'"}ve Done
-                        </a>
-                        {/*                         
-                        <a href="#timeline" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
+                        </a>                    
+                        {/* <a href="#timeline" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
                             Timeline
-                        </a>
-                        <a href="#projects" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
-                            Projects
-                        </a> 
-                        <a href="#gallery" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
+                        </a> */}
+                        <a href="/more" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
                             Gallery
-                        </a>
-                        */}
-                        <a href="#contact" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
-                            Contact
                         </a>
                     </div>
                     <div className="h-[80%] flex flex-col justify-center items-center text-center">

@@ -31,10 +31,9 @@ export default function Slider() {
 
     return (
         <>
-            <div className="w-full flex justify-center pb-10 relative">
+            <div id="gallery" className="w-full flex justify-center mb-10 relative">
                 <div className="w-5/6 sm:w-3/5">
-                    <h1 className="text-6xl font-bold pb-5 pt-5">Gallery</h1>
-                    <p>It goes fast, try to catch all the images!</p>
+                    <h1 className="text-6xl font-bold pt-5">Gallery</h1>
                 </div>
             </div>
             <div className="overflow-x-hidden w-full max-w-full mx-auto pb-10">

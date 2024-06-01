@@ -1,22 +1,16 @@
 import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Text from "../components/text";
-import Project from "../components/projects";
+import Project from "../components/project";
 import GradientBlur from "../components/gradientBlur";
 import Slider from "../components/slider";
-import Box from "../components/box";
 import Button from "../components/button";
+import Gallery from "../components/gallery";
 
 export default function Home() {
   return (
     <>
       <div className="relative font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose">
-        {/* <div className="absolute inset-0 z-10">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full blur-lg animate-pulse-custom opacity-50 md:w-64 md:h-64"></div>
-          <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-r from-blue-500 to-green-500 rounded-full blur-lg animate-pulse-custom opacity-50 md:w-48 md:h-48"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-20 h-20 bg-gradient-to-r from-red-500 to-purple-500 rounded-full blur-lg animate-pulse-custom opacity-50 md:w-40 md:h-40"></div>
-        </div>
-         */}
         <Hero />
         <main className="flex justify-center pb-10 pt-20 z-20 relative mt-[150px]">
           <div className="w-5/6 sm:w-3/5">

@@ -1,9 +1,10 @@
-import Text from '../../components/text';
+import Text from "../../components/text";
+import Gallery from "../../components/gallery";
 
-export default function About() {
+export default function More() {
     return (
         <>
-            <main className="flex justify-center pb-10 pt-20 z-20 relative font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose h-fit md:h-full">
+            <main className="flex justify-center pt-20 relative font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose min-h-screen">
                 <div className="w-5/6 sm:w-3/5">
                     <a className="underline hover:text-gray-600" href="/">← Back to home page.</a>
                     <Text
@@ -13,6 +14,7 @@ export default function About() {
                         </>}
                         name="story"
                     />
+                    <Gallery />
                 </div>
             </main>
         </>
