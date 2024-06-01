@@ -52,23 +52,33 @@ export default function Home() {
               />
             </div>
             <Text
+              title="Accomplishments"
+              content={<>
+                <li>First place winner of the 2023 Beantown Bash Hackathon.</li>
+                <li>First place winner of the 2023 Wayland Science Fair.</li>
+                <li>Ham Radio Extra Class Licensee.</li>
+                <li>Presenter and author of two talks at the North East HamXposition.</li>
+                <li>Ran a successful woodworking business.</li>
+              </>}
+              name="awards"
+            />
+            <Text
+              title="Experiences"
+              content={<>
+                <li>Volunteer IT director for New England Sci-Tech.</li>
+                <li>Soldering kit and circuit board designer for New England Sci-Tech.</li>
+                <li>Member of the youth subcommittee for the North East HamXposition.</li>
+              </>}
+              name="experiences"
+            />
+            <Text
               title="Projects"
               content={<>
-                <p>Here are some of the projects I{"'"}ve worked on. If you want to see more, head over to <a target="_blank"  href="/more" className="underline hover:text-gray-600">this page.</a></p>
+                <p>Here are some of the projects I{"'"}ve worked on. If you want to see more, head over to <a target="_blank" href="/more" className="underline hover:text-gray-600">this page.</a></p>
               </>}
               name="contact"
             />
             <div className="flex flex-wrap justify-center items-center">
-              {/* <Project
-                title="StratoSoar"
-                name=""
-                image="boardIRL.png"
-                alt="PCB"
-                url="https://github.com/crnicholson/StratoSoar-MK2"
-                content={<>
-                  <p>StratoSoar is a low-power, adaptive Unmanned Aerial Vehicle (UAV), designed to be dropped from a weather balloon at approximately 10,000 feet of altitude. The main goal of StratoSoar is to fly from Point A to Point B without human interaction. GPS coordinates are selected in programming, and the glider navigates there in an efficient manner. Click to learn more.</p>
-                </>}
-              /> */}
               <Project
                 title="StratoSoar"
                 name=""

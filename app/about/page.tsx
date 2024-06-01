@@ -18,15 +18,13 @@ export default function About() {
                     <Text
                         title="Skills"
                         content={<>
-                            <p>I am well versed for my age, with interest and knowledge in many subjects.</p>
-                            <br></br>
-                            <li>Electronics: KiCAD, AVR, ARM, RF, Arduino, RPi, test equipment</li>
-                            <li>Programming: C++, Python</li>
-                            <li>Mechanical Engineering: Fusion 360, Simscale</li>
-                            <li>Front End Web Design: Next.js, HTML, CSS, Figma</li>
-                            <li>Fabrication: 3D printing, CNCs, laser cutter, handtools</li>
-                            <li>Frameworks/Tools: GitHub, Git, Vercel</li>
-                            <li>Other: business management, public speaking</li>
+                            <li>Electronics: KiCAD, AVR, ARM, RF, Arduino, RPi, test equipment.</li>
+                            <li>Programming: C++, Python.</li>
+                            <li>Mechanical Engineering: Fusion 360, Simscale.</li>
+                            <li>Front End Web Design: Next.js, HTML, CSS, Figma.</li>
+                            <li>Fabrication: 3D printing, CNCs, laser cutter, handtools.</li>
+                            <li>Frameworks/Tools: GitHub, Git, Vercel.</li>
+                            <li>Other: business management, public speaking.</li>
                         </>}
                         name="skills"
                     />
