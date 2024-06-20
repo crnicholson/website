@@ -80,7 +80,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center">
               <Project
                 content="StratoSoar is a high-altitude Unmanned Autonomous Vehicle (UAV), capable of flying to selected coordinates. It is designed to be dropped from a weather balloon at 10,000 feet of altitude."
-                image="board.png"
+                image="stratoSoarMK2.png"
                 title="StratoSoar MK2"
                 date="2023-"
                 name="StratoSoar"
@@ -209,8 +209,8 @@ export default function Home() {
                 link="https://nicholsonlabs.gitbook.io/labs/bioplastic"
               />
               <Project
-                content="Come see my gallery of PCBs!."
-                image="boardIRL.png"
+                content="Come see my gallery of PCBs!"
+                image="stratoSoarMK2-IRL.png"
                 title="PCB Gallery"
                 date="2021-"
                 name="PCB Gallery"
