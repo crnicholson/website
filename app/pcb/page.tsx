@@ -1,5 +1,6 @@
 import PCB from "../../components/pcb";
 import Text from "../../components/text";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -39,7 +40,7 @@ export default function Home() {
                             image="cutdownMechanism-IRL.png"
                             title="Cutdown Mechanism"
                             date="2024"
-                            name="Cutdown Mechanism" 
+                            name="Cutdown Mechanism"
                             revisions="2"
                             boards="10"
                             link=""
@@ -223,11 +224,23 @@ export default function Home() {
                             link=""
                         />
                     </div>
-                    <h1 className="text-5xl font-bold pb-5 pt-5">A handful of my assembled PCBs!</h1>
-                    <p>I've always wanted to put all my assembled PCBs into a pile - so I did.</p>
-                    <div className="flex justify-center">
-                        <img className="w-4/5" src="drugs.jpeg" alt="PCB pile" /> 
-                    </div>
+                    <Text
+                        title="A Handful of My Assembled PCBs"
+                        content={<>
+                            <p>I've always wanted to take a photo of all my assembled PCBs - so I did!</p>
+                            <div className="pt-5 flex justify-center">
+                                <Image
+                                    src="/beantown.jpeg"
+                                    width={0}
+                                    height={0}
+                                    className="w-[500px] h-[500px] shadow-2xl rounded-lg"
+                                    alt=""
+                                    priority={true}
+                                />
+                            </div>
+                        </>}
+                        name="about"
+                    />
                 </div>
             </main>
         </>
