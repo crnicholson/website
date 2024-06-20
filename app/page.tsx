@@ -1,9 +1,9 @@
+import React from "react";
 import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Text from "../components/text";
 import Slider from "../components/slider";
 import Button from "../components/button";
-import React from "react";
 import Project from "../components/moreProjects";
 
 export default function Home() {
@@ -189,8 +189,8 @@ export default function Home() {
                 link="https://github.com/crnicholson/LittleLoRa"
               />
               <Project
-                content="LittleLoRa is GPS tracker intended to track gliders or high altitude balloons from long distances using minimal power. LittleLoRa is the companion project of StratoSoar and is very much a WIP."
-                image="littleLoRa.png"
+                content="This cutdown mechanism was designed to release StratoSoar from the balloon at a certain altitude. I packed it full of features like a GPS, LoRa for remote activation, and a temperature, humidity, and pressure sensor."
+                image="cutdownMechanism.jpg"
                 title="Cutdown Mechanism for StratoSoar"
                 date="2024"
                 name="Cutdown Mechanism for StratoSoar"
@@ -198,11 +198,29 @@ export default function Home() {
                 color="black"
                 link="https://github.com/crnicholson/Cutdown-Mechanism"
               />
+              <Project
+                content="This project involved creating my own seaweed-based bioplastic from scratch. Whilst it may have not been a huge success, I did make a strong, translucent plastic film that I hope to use in future project. I also learned lots about chemistry, biology, and experiments."
+                image="bioplastic.avif"
+                title="Bioplastic"
+                date="2023"
+                name="Bioplastic"
+                bg="rgba(0,0,0,0.1)"
+                color="black"
+                link="https://nicholsonlabs.gitbook.io/labs/bioplastic"
+              />
+              <Project
+                content="Come see my gallery of PCBs!."
+                image="boardIRL.png"
+                title="PCB Gallery"
+                date="2021-"
+                name="PCB Gallery"
+                bg="rgba(0,0,0,0.1)"
+                color="black"
+                link="/pcb"
+              />
               {/* 
               - AI trash can - CanCam
-              - PCB gallery
               - Self driving car
-              - Bioplastic
               */}
             </div>
           </div>
