@@ -235,7 +235,6 @@ export default function Home() {
                                     height={0}
                                     className="w-[500px] h-[500px] shadow-2xl rounded-lg"
                                     alt=""
-                                    priority={true}
                                 />
                             </div>
                         </>}
