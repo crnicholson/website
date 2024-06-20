@@ -77,7 +77,7 @@ export default function Home() {
               </>}
               name="contact"
             />
-            <div className="flex flex-wrap justify-center items-center">
+            <div className="flex flex-wrap items-center">
               <Project
                 content="StratoSoar is a high-altitude Unmanned Autonomous Vehicle (UAV), capable of flying to selected coordinates. It is designed to be dropped from a weather balloon at 10,000 feet of altitude."
                 image="board.png"
