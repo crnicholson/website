@@ -195,7 +195,7 @@ export default function Home() {
                         />
                         <PCB
                             content="This was my first ever PCB! I started off using Fritzing but later switched to KiCAD for the PCB design. This was such a learning experience and I'm glad I did it."
-                            image=".png"
+                            image="beantown.jpeg"
                             title="Blinky Heart"
                             date="2021-2022"
                             name="Blinky Heart"
@@ -205,7 +205,7 @@ export default function Home() {
                         />
                         <PCB
                             content="This was my second PCB, and somehow I still ran into issues. It blinks the LEDs for a festive ornament, in a compact size."
-                            image=".png"
+                            image="beantown.jpeg"
                             title="Blinky Snowflake"
                             date="2022-2023"
                             name="Blinky Snowflake"
@@ -215,7 +215,7 @@ export default function Home() {
                         />
                         <PCB
                             content="This PCB was designed for Saint Patrick's Day, and following the theme of my other PCBs, blinks! Some minor issues need to be solved before production."
-                            image=".png"
+                            image="beantown.jpeg"
                             title="Blinky Clover"
                             date="2023"
                             name="Blinky Clover"
@@ -231,9 +231,9 @@ export default function Home() {
                             <div className="pt-5 flex justify-center">
                                 <Image
                                     src="/beantown.jpeg"
-                                    width={0}
-                                    height={0}
-                                    className="w-[500px] h-[500px] shadow-2xl rounded-lg"
+                                    width={300}
+                                    height={300}
+                                    className="h-[500px] w-auto shadow-2xl rounded-lg"
                                     alt=""
                                 />
                             </div>

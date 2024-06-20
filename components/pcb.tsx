@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function MoreProjects(props: { content: string; image: string; link: string; title: string; date: string; name: string; revisions: string; boards: string; }) {
+export default function PCB(props: { content: string; image: string; link: string; title: string; date: string; name: string; revisions: string; boards: string; }) {
     return (
         <>
             <div className="h-fit w-fit mt-4">
@@ -9,10 +9,9 @@ export default function MoreProjects(props: { content: string; image: string; li
                         <div className="relative mx-5 my-2 transform transition-transform duration-300  bg-[rgba(0,0,0,.1)] shadow-xl group-hover:shadow-3xl h-[300px] w-fit rounded-lg">
                             <Image
                                 src={"/" + props.image}
-                                width={0}
-                                height={0}
-                                sizes="100%"
-                                // className="rounded-lg w-fit group-hover:opacity-10"
+                                width={300}
+                                height={300}
+                                className="h-[300px] w-auto rounded-lg group-hover:opacity-10"
                                 alt={props.title}
                             />
                             <div className="absolute inset-0 shadow-2xl rounded-lg group-hover:border-transparent transition-all duration-300">
