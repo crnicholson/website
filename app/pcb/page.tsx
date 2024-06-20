@@ -7,7 +7,7 @@ export default function Home() {
                 <div className="w-5/6 sm:w-3/5">
                     <a className="underline hover:text-gray-600" href="/">← Back to home page.</a>
                     <h1 className="text-5xl font-bold pb-5 pt-5">PCB Projects</h1>
-                    <p>Here I will show you all of my public Printed Circuit Board (PCB) designs. I do work for a local company with my PCBs, so some I have to keep private. My stats are all the public ones.</p>
+                    <p>Here I will show you all of my public Printed Circuit Board (PCB) designs. I do work for a local company designing PCBs, so some I have to keep private. My stats are all the public ones.</p>
                     <h1 className="text-5xl font-bold pb-5 pt-5">Stats</h1>
                     <p>Unique designs: <span className="text-2xl font-bold">18</span>. Total revisions: <span className="text-2xl font-bold">48</span>. Commissioned designs: <span className="text-2xl font-bold">10</span> unique designs. SMD boards: <span className="text-2xl font-bold">17</span> unique designs. 4 layer boards: <span className="text-2xl font-bold">3</span> unique designs. Boards sold: <span className="text-2xl font-bold">3,000</span> total.</p>
                     <h1 className="text-5xl font-bold pb-5 pt-5">Favorite and Most Complex Boards</h1>
@@ -33,9 +33,19 @@ export default function Home() {
                             boards="5"
                             link="https://github.com/crnicholson/LittleLoRa"
                         />
+                        <PCB
+                            content="This circuit, although it was quite simple, was one of my first attempts to make a complete system with 3D printing. It's also pretty awesome - it can literally drop anything from tens of thousands of feet!"
+                            image="cutdownMechanism.jpg"
+                            title="Cutdown Mechanism"
+                            date="2023-"
+                            name="Cutdown Mechanism" 
+                            revisions="2"
+                            boards="10"
+                            link="https://github.com/crnicholson/LittleLoRa"
+                        />
                     </div>
                     <h1 className="text-5xl font-bold pb-5 pt-5">General Boards</h1>
-                    <p>These are some of the more general boards I designed. Links to PCB to come!</p>
+                    <p>These are some of the more general boards I designed. Links to the PCB files to come!</p>
                     <div className="flex flex-wrap items-center">
                         <PCB
                             content="This was three circuit boards in one, and I was testing out two different ways of directly inserting the USB-C cable into the PCB. I also made simple breakout with a traditional method of a dedicated socket."
@@ -77,13 +87,23 @@ export default function Home() {
                             boards="5"
                             link=""
                         />
+                        <PCB
+                            content="This board proved to give me a lot of headaches, mainly because the TPS61200 is impossible to solder! The board worked fine, though, and thanks to lots of research, the output was noise free."
+                            image="tpsBreakout.png"
+                            title="TPS61200 Breakout"
+                            date="2024"
+                            name="TPS61200 Breakout"
+                            revisions="2"
+                            boards="10"
+                            link=""
+                        />
                     </div>
                     <h1 className="text-5xl font-bold pb-5 pt-5">Soldering Kits</h1>
                     <p>I designed these boards to be used to help youth learn soldering at my local maker space. These ones won't have links as they aren't open source!</p>
                     <div className="flex flex-wrap items-center">
                         <PCB
                             content="This was a simple spinning and blinking top that combined laser cutting and PCBs into one small and fun educational kit."
-                            image="littleLoRa.png"
+                            image="spinnyTop.png"
                             title="Blinky Top"
                             date="2023"
                             name="Blinky Top"
