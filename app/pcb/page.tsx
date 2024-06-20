@@ -12,7 +12,18 @@ export default function Home() {
                     <p>Unique designs: <span className="text-2xl font-bold">18</span>. Total revisions: <span className="text-2xl font-bold">48</span>. Commissioned designs: <span className="text-2xl font-bold">10</span> unique designs. SMD boards: <span className="text-2xl font-bold">17</span> unique designs. 4 layer boards: <span className="text-2xl font-bold">3</span> unique designs. Boards sold: <span className="text-2xl font-bold">3,000</span> total.</p>
                     <h1 className="text-5xl font-bold pb-5 pt-5">Favorite and Most Complex Boards</h1>
                     <p>Some of these took way too long to design and assemble.</p>
-                    {/* <PCB /> */}
+                    <PCB
+                        content="This was the main circuit board for my project, StratoSoar."
+                        image="board.png"
+                        title="StratoSoar"
+                        date="2023-"
+                        name="StratoSoar"
+                        revisions="4"
+                        boards="20"
+                        bg="rgba(0,0,0,0.1)"
+                        color="white"
+                        link="https://github.com/crnicholson/StratoSoar-MK2"
+                    />
                     <h1 className="text-5xl font-bold pb-5 pt-5">General Boards</h1>
                     <p>These are some of the more general boards I designed.</p>
                     {/* <PCB /> */}

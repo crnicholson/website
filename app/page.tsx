@@ -73,7 +73,7 @@ export default function Home() {
             <Text
               title="Projects"
               content={<>
-                <p>Here are some of the projects I{"'"}ve worked on. If you want to see more, head over to <a target="_blank" href="/more" className="underline hover:text-gray-600">this page.</a></p>
+                <p>Here are some of the projects I{"'"}ve worked on. If you want to see some of my PCB projects, head over to <a target="_blank" href="/pcb" className="underline hover:text-gray-600">this page.</a></p>
               </>}
               name="contact"
             />
@@ -191,9 +191,9 @@ export default function Home() {
               <Project
                 content="This cutdown mechanism was designed to release StratoSoar from the balloon at a certain altitude. I packed it full of features like a GPS, LoRa for remote activation, and a temperature, humidity, and pressure sensor."
                 image="cutdownMechanism.jpg"
-                title="Cutdown Mechanism for StratoSoar"
+                title="Cutdown Mechanism"
                 date="2024"
-                name="Cutdown Mechanism for StratoSoar"
+                name="Cutdown Mechanism"
                 bg="rgba(0,0,0,0.1)"
                 color="black"
                 link="https://github.com/crnicholson/Cutdown-Mechanism"
