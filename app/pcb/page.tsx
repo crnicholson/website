@@ -227,7 +227,7 @@ export default function Home() {
                     <Text
                         title="A Handful of My Assembled PCBs"
                         content={<>
-                            <p>I've always wanted to take a photo of all my assembled PCBs - so I did!</p>
+                            <p>I{"'"}ve always wanted to take a photo of all my assembled PCBs - so I did!</p>
                             <div className="pt-5 flex justify-center">
                                 <Image
                                     src="/beantown.jpeg"
