@@ -1,4 +1,5 @@
 import PCB from "../../components/pcb";
+import Text from "../../components/text";
 
 export default function Home() {
     return (
@@ -12,7 +13,7 @@ export default function Home() {
                     <p>Total unique designs: <span className="text-2xl font-bold">18</span>. Total revisions: <span className="text-2xl font-bold">48</span>. Commissioned designs: <span className="text-2xl font-bold">10</span> unique designs. SMD boards: <span className="text-2xl font-bold">17</span> unique designs. 4 layer boards: <span className="text-2xl font-bold">3</span> unique designs. Boards sold: <span className="text-2xl font-bold">3,000</span> total.</p>
                     <h1 className="text-5xl font-bold pb-5 pt-5">Favorite and Most Complex Boards</h1>
                     <p>Some of these took way too long to design and assemble.</p>
-                    <div className="flex flex-wrap items-center">
+                    <div className="flex flex-wrap items-center justify-center md:justify-start">
                         <PCB
                             content="This was the circuit board I designed for my project, StratoSoar. It is 4 layers and has over 200 components. This was a huge learning experience for me, as it combined, RF, power, digital, SMD, and 4 layers into one."
                             image="stratoSoarMK2.3-IRL.png"
@@ -44,7 +45,7 @@ export default function Home() {
                             link=""
                         />
                     </div>
-                    <h1 className="text-5xl font-bold pb-5 pt-5">General Boards</h1>
+                    <h1 className="text-5xl font-bold pb-5 pt-5 justify-center md:justify-start">General Boards</h1>
                     <p>These are some of the more general boards I designed. Links to the PCB files to come!</p>
                     <div className="flex flex-wrap items-center">
                         <PCB
@@ -128,8 +129,8 @@ export default function Home() {
                             link=""
                         />
                     </div>
-                    <h1 className="text-5xl font-bold pb-5 pt-5">Soldering Kits</h1>
-                    <p>I designed these boards to be used to help youth learn soldering at my local maker space. These ones won't have links as they aren't open source!</p>
+                    <h1 className="text-5xl font-bold pb-5 pt-5 justify-center md:justify-start">Soldering Kits</h1>
+                    <p>I designed these boards to be used to help youth learn soldering at my local maker space. These ones won{"'"}t have links as they aren{"'"}t open source!</p>
                     <div className="flex flex-wrap items-center">
                         <PCB
                             content="This was a simple spinning and blinking top that combined laser cutting and PCBs into one small and fun educational kit."
@@ -221,6 +222,11 @@ export default function Home() {
                             boards="10"
                             link=""
                         />
+                    </div>
+                    <h1 className="text-5xl font-bold pb-5 pt-5">A handful of my assembled PCBs!</h1>
+                    <p>I've always wanted to put all my assembled PCBs into a pile - so I did.</p>
+                    <div className="flex justify-center">
+                        <img className="w-4/5" src="drugs.jpeg" alt="PCB pile" /> 
                     </div>
                 </div>
             </main>
