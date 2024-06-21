@@ -1,4 +1,4 @@
-import Image from "../components/image";
+import SliderImage from "./sliderImage";
 
 export default function Slider() {
     const images = [
@@ -41,7 +41,7 @@ export default function Slider() {
                 <div className="scrolling-wrapper">
                     {images.concat(images).map((image, index) => (
                         <div key={index} className="carousel-item bg-transparent">
-                            <Image
+                            <SliderImage
                                 src={image.src}
                                 alt={image.alt}
                             />

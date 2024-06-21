@@ -14,14 +14,11 @@ export default function Hero() {
                         {/* <a href="#timeline" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
                             Timeline
                         </a> */}
-                        <a href="/more" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
+                        <a href="#gallery" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
                             Gallery
                         </a>
                     </div>
                     <div className="h-[80%] flex flex-col justify-center items-center text-center">
-                        {/* <h1 className="sm:text-8xl text-5xl font-bold  text-[#e0e1dd]">
-                        Hi. I{"'"}m Charlie Nicholson.
-                    </h1> */}
                         <h1 className="sm:text-8xl text-6xl font-bold text-[#0d1b2a]">
                             Hi. I{"'"}m Charlie Nicholson.
                         </h1>
