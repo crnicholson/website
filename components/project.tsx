@@ -15,7 +15,7 @@ export default function Project(props: { content: string; src: string; link: str
                                 alt={props.alt}
                             />
                             <div className="absolute inset-0 shadow-2xl rounded-lg group-hover:border-transparent transition-all duration-300">
-                                <div className="p-2 invisible group-hover:visible">
+                                <div className="p-2 invisible sm:group-hover:visible">
                                     <h1 className="text-2xl italic font-bold">
                                         {props.title}
                                     </h1>
