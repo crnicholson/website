@@ -11,7 +11,7 @@ export default function Project(props: { content: string; src: string; link: str
                                 src={"/" + props.src}
                                 width={300}
                                 height={300}
-                                className="sm:h-[300px] h-[225px] w-auto rounded-lg group-hover:opacity-10"
+                                className="sm:h-[300px] h-[225px] w-auto rounded-lg sm:group-hover:opacity-10"
                                 alt={props.alt}
                             />
                             <div className="absolute inset-0 shadow-2xl rounded-lg group-hover:border-transparent transition-all duration-300">

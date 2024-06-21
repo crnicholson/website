@@ -210,7 +210,7 @@ export default function Home() {
                             link=""
                             alt=""
                         />
-                        <PCB
+                        {/* <PCB
                             content="This was my first ever PCB! I started off using Fritzing but later switched to KiCAD for the PCB design. This was such a learning experience and I'm glad I did it."
                             src="beantown.jpeg"
                             title="Blinky Heart"
@@ -242,20 +242,20 @@ export default function Home() {
                             boards="10"
                             link=""
                             alt=""
-                        />
+                        /> */}
                     </div>
                     <Text
                         title="A Handful of My Assembled PCBs"
                         content={<>
                             <p>I{"'"}ve always wanted to take a photo of all my assembled PCBs - so I did!</p>
                             <div className="pt-5 flex justify-center">
-                                <Image
+                                {/* <Image
                                     src="/beantown.jpeg"
                                     width={300}
                                     height={300}
                                     className="h-[500px] w-auto shadow-2xl rounded-lg"
                                     alt=""
-                                />
+                                /> */}
                             </div>
                         </>}
                         name="about"
