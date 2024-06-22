@@ -1,5 +1,6 @@
 import PCB from "../../components/pcb";
 import Text from "../../components/text";
+import PCBText from "../../components/pcbText";
 import Image from "next/image";
 
 export default function Home() {
@@ -25,6 +26,26 @@ export default function Home() {
                             boards="20"
                             link="https://github.com/crnicholson/StratoSoar-MK2"
                             alt=""
+                            moreContent={
+                                <>
+                                    <PCBText
+                                        title="Version 1"
+                                        content={
+                                            <>
+                                                <p className="pb-2">This was my first version of StratoSoar, StratoSoar MK2.0</p>
+                                                <Image
+                                                    src="/stratoSoarMK2.png" 
+                                                    width={300}
+                                                    height={300}
+                                                    className=" h-auto w-fit shadow-2xl rounded-lg"
+                                                    alt=""
+                                                />
+                                            </>
+                                        }
+                                        name="about"
+                                    />
+                                </>
+                            }
                         />
                         <PCB
                             content="This was the main circuit board for my project, LittleLoRa. This project has taken a bit of a hiatus while I spend most of my time on StratoSoar and the GitHub link doesn't have my PCBs on it."
@@ -36,6 +57,10 @@ export default function Home() {
                             boards="5"
                             link="https://github.com/crnicholson/LittleLoRa"
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This circuit, although it was quite simple, was one of my first attempts to make a complete system with 3D printing. It's also pretty awesome - it can literally drop anything from tens of thousands of feet!"
@@ -47,16 +72,18 @@ export default function Home() {
                             boards="10"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                     </div>
                     <h1 className="text-5xl font-bold pb-5 pt-5 justify-center md:justify-start">General Boards</h1>
                     <p>These are some of the more general boards I designed. Links to the PCB files to come!</p>
-                    <div className="flex flex-wrap items-center">
+                    <div className="flex flex-wrap items-center justify-center md:justify-start">
                         <PCB
-                            content="This was three circuit boards in one, and I was testing out two different ways of directly inserting the USB-C cable into the PCB. I also made simple breakout with a traditional method of a dedicated socket. ssdlfkgjlsd
-                            kfjsl  kdfjgl  
-                            ksdjglksd fj glkds fjg lsd kgfjlsdk fjsdl kgjsld kjgsld kfgjlsd kjglkjlkjd sflkg jsdlfkjsgdl kjsdlkjgsdl  ksdjflk sd jf glksdj flkdjflksj  dfl ksd  jflkd jflkdfk fgkjfg  kfjgjlf k gj  l dkfjldkf jgld kf jg  slkdgf  ;sd;lkj ;ljk; gsldkf; lsdk fjls;d kfjgl;kd fjgls;kdfgjl  dsfgjdsflkf dlkjfgl kg klglj kfs klgsfdl   ; kjsgfdljkgs fdl;kjsg dflkjsgd flklksf  gdlkj gsfdljk;gsfdjkl ;gd  fsklj ;gsdf kl;jg fdjkl;g fdl jk ;gsfklj ;gsfldkj;  kljg;sfdljk;gs fjkl;gsd  fljk;gsfdkl j;gsfdklj;gf  sdljk;  gsl fkdklj ;sgdfk lj;gsdf  kjl;gsdf ljk;gfdlkj;"
-                            src="usb.png" 
+                            content="This was three circuit boards in one, and I was testing out two different ways of directly inserting the USB-C cable into the PCB. I also made simple breakout with a traditional method of a dedicated socket."
+                            src="usb.png"
                             title="USB-C Breakouts"
                             date="2024"
                             name="USB-C Breakouts"
@@ -64,6 +91,10 @@ export default function Home() {
                             boards="15"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This was a fun and useful tool, based on a design by Adafruit and adapted to fit my class and as a freebie for my program."
@@ -75,6 +106,10 @@ export default function Home() {
                             boards="50"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This breakout was my first attempt at RF and GPS circuitry, and while I did use too many RF vias, it worked perfectly. I used this board in the development StratoSoar project."
@@ -86,6 +121,10 @@ export default function Home() {
                             boards="5"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This was a tiny breakout board for the MPU-9250 IMU. I never soldered it because I can't solder the tiny MPU-9250 package!"
@@ -97,6 +136,10 @@ export default function Home() {
                             boards="5"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This was a breakout board the radio chip Si4063. My friend and I used this in the development of new radio systems."
@@ -108,6 +151,10 @@ export default function Home() {
                             boards="5"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This board was created to practice soldering small packages like 0201. It is quite simple but very useful for practice."
@@ -119,6 +166,10 @@ export default function Home() {
                             boards="5"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This board proved to give me a lot of headaches, mainly because the TPS61200 is impossible to solder! The board worked fine, though, and thanks to lots of research, the output was noise free."
@@ -130,6 +181,10 @@ export default function Home() {
                             boards="10"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This was my first circuit board for the StratoSoar project. It was not pretty and it had a large number of flaws."
@@ -141,11 +196,15 @@ export default function Home() {
                             boards="5"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                     </div>
                     <h1 className="text-5xl font-bold pb-5 pt-5 justify-center md:justify-start">Soldering Kits</h1>
                     <p>I designed these boards to be used to help youth learn soldering at my local maker space. These ones won{"'"}t have links as they aren{"'"}t open source!</p>
-                    <div className="flex flex-wrap items-center">
+                    <div className="flex flex-wrap items-center justify-center md:justify-start">
                         <PCB
                             content="This was a simple spinning and blinking top that combined laser cutting and PCBs into one small and fun educational kit."
                             src="spinnyTop.png"
@@ -156,6 +215,10 @@ export default function Home() {
                             boards="255"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This piano kit is a bit unfinished - I still need to play with the resistor values that make the 555 play different tunes."
@@ -167,6 +230,10 @@ export default function Home() {
                             boards="5"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This radio kit helps people learn about radios whilst making a fun and useful radio. I designed it from scratch using a powerful FM radio chip and the headphone cable as the antenna. It is currently a fan favorite especially with our ham radio outreach group."
@@ -178,6 +245,10 @@ export default function Home() {
                             boards="270"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This kit was created as a way for students to solder their own Arduino and then use that Arduino in a class - exposing them to lots of aspects of electronics all at once. It is currently being developed."
@@ -189,6 +260,10 @@ export default function Home() {
                             boards="50"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This is a little candle night light - during the night, it shines a flickering LED bulb, similar to a flame. Some minor issues need to be solved before production."
@@ -200,6 +275,10 @@ export default function Home() {
                             boards="15"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         <PCB
                             content="This is blinky badge to show off my maker space at conventions. Some minor issues need to be solved before production."
@@ -211,6 +290,10 @@ export default function Home() {
                             boards="10"
                             link=""
                             alt=""
+                            moreContent={
+                                <>
+                                </>
+                            }
                         />
                         {/* <PCB
                             content="This was my first ever PCB! I started off using Fritzing but later switched to KiCAD for the PCB design. This was such a learning experience and I'm glad I did it."

@@ -1,3 +1,7 @@
+// Add content for the versions
+// all of these to the other one
+// clean up projects.tsx
+
 import Image from "next/image";
 import { ReactNode } from "react";
 
@@ -7,7 +11,7 @@ export default function PCB(props: { content: string; src: string; link: string;
             <div className="h-fit w-fit mt-4">
                 <a href={props.link} target="_blank">
                     <div className="group flex flex-col gap-2 items-center">
-                        <div className="relative mx-5 my-2 transform transition-transform duration-300 bg-[rgba(0,0,0,.1)] shadow-xl group-hover:shadow-3xl h-[300px] w-auto rounded-lg overflow-visible">
+                        <div className="relative mx-5 my-2 bg-[rgba(0,0,0,.1)] shadow-xl group-hover:shadow-3xl sm:h-[350px] h-[250px] w-auto rounded-lg overflow-visible">
                             <Image
                                 src={"/" + props.src}
                                 width={300}
@@ -15,7 +19,7 @@ export default function PCB(props: { content: string; src: string; link: string;
                                 className="rounded-lg object-cover w-full h-full group-hover:opacity-10"
                                 alt={props.alt}
                             />
-                            <div className="absolute inset-0 shadow-2xl rounded-lg min-h-[300px] sm:min-h-[225px] h-full z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-auto">
+                            <div className="absolute inset-0 shadow-2xl rounded-lg h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-auto">
                                 <div className="p-2">
                                     <h1 className="text-2xl italic font-bold">
                                         {props.title}
@@ -40,7 +44,7 @@ export default function PCB(props: { content: string; src: string; link: string;
                         </div>
                         <div className="w-fit h-fit p-1 rounded-2xl italic flex flex-row justify-center items-center bg-[rgba(0,0,0,0.1)]">
                             <h1 id={props.name} className="mr-2 text-[13px] font-bold">
-                                <p><span className="text-lg">{props.revisions}</span> revision(s), <span className="text-lg">{props.boards}</span> total boards</p>
+                                <p className="text-[12px] sm:text-[15px]"><span className="text-base sm:text-lg">{props.revisions}</span> revision(s), <span className="text-base sm:text-lg">{props.boards}</span> total boards</p>
                             </h1>
                         </div>
                     </div >
