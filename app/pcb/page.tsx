@@ -53,8 +53,10 @@ export default function Home() {
                     <p>These are some of the more general boards I designed. Links to the PCB files to come!</p>
                     <div className="flex flex-wrap items-center">
                         <PCB
-                            content="This was three circuit boards in one, and I was testing out two different ways of directly inserting the USB-C cable into the PCB. I also made simple breakout with a traditional method of a dedicated socket."
-                            src="usb.png"
+                            content="This was three circuit boards in one, and I was testing out two different ways of directly inserting the USB-C cable into the PCB. I also made simple breakout with a traditional method of a dedicated socket. ssdlfkgjlsd
+                            kfjsl  kdfjgl  
+                            ksdjglksd fj glkds fjg lsd kgfjlsdk fjsdl kgjsld kjgsld kfgjlsd kjglkjlkjd sflkg jsdlfkjsgdl kjsdlkjgsdl  ksdjflk sd jf glksdj flkdjflksj  dfl ksd  jflkd jflkdfk fgkjfg  kfjgjlf k gj  l dkfjldkf jgld kf jg  slkdgf  ;sd;lkj ;ljk; gsldkf; lsdk fjls;d kfjgl;kd fjgls;kdfgjl  dsfgjdsflkf dlkjfgl kg klglj kfs klgsfdl   ; kjsgfdljkgs fdl;kjsg dflkjsgd flklksf  gdlkj gsfdljk;gsfdjkl ;gd  fsklj ;gsdf kl;jg fdjkl;g fdl jk ;gsfklj ;gsfldkj;  kljg;sfdljk;gs fjkl;gsd  fljk;gsfdkl j;gsfdklj;gf  sdljk;  gsl fkdklj ;sgdfk lj;gsdf  kjl;gsdf ljk;gfdlkj;"
+                            src="usb.png" 
                             title="USB-C Breakouts"
                             date="2024"
                             name="USB-C Breakouts"
