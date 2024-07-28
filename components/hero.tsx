@@ -5,27 +5,28 @@ export default function Hero() {
     return (
         <>
             <div className="bg-[#03161F]  text-[#BDBDBD]">
-                <div className="p-10 pt-[200px] flex gap-5 justify-center">
-                    <div className="w-fit max-w-4xl">
+                <div className="flex flex-col-reverse sm:flex-row justify-center gap-5 p-10 pt-[45px] sm:pt-[200px]">
+                    <div className="max-w-4xl w-fit">
                         <p className="text-xl font-light">
                             HEY THERE, I{"'"}M
                         </p>
-                        <h1 className="text-[#2ECC71] sm:text-6xl text-5xl w-fit font-bold">
+                        <h1 className="text-[#2ECC71] text-5xl sm:text-6xl font-bold w-fit">
                             Charlie Nicholson
                         </h1>
-                        <p className="text-lg mt-4 max-w-xl mx-auto font-light">
-                            I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I'm not in my bedroom lab coding and tinkering, you can find me running and enjoying nature. <a className="underline hover:text-gray-600" target="_blank" href="/about">Here's more about me.</a>
+                        <p className="text-lg font-light mt-4 mx-auto max-w-xl">
+                            I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I{"'"}m not in my bedroom lab coding and tinkering, you can find me running and enjoying nature. <a className="underline hover:text-gray-600" target="_blank" href="/about">Here{"'"}s more about me.</a>
                         </p>
                     </div>
                     <Image
                         src="/me.jpg"
                         width={300}
                         height={300}
-                        className="rounded-lg w-[200px] h-fit"
+                        className="w-[200px] h-fit rounded-lg"
                         alt="me"
                     />
                 </div>
-                <div className="flex flex-wrap gap-5 mb-5 justify-center">
+
+                <div className="flex flex-wrap gap-5 mb-5 pr-2 justify-center">
                     <Button
                         href="mailto:charlienicholsonr@gmail.com"
                         text="Contact"

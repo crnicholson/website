@@ -12,10 +12,10 @@ export default function Home() {
       <div className="font-[rubik] bg-[#03161F]  text-[#BDBDBD] prose">
         <Hero />
         <main className="flex justify-center pb-10">
-          <div className="w-5/6 sm:w-3/5">
+          <div className="w-5/6 sm:w-4/5">
             <div className="pt-[100px]" />
             <h1 className="text-4xl pb-5 text-[#2ECC71]">Projects</h1>
-            <div className="flex flex-wrap items-center gap-5 justify-center sm:justify-start">
+            <div className="flex flex-wrap items-center gap-5 justify-center">
               <Project
                 content="StratoSoar is a high-altitude Unmanned Autonomous Vehicle (UAV), capable of flying to selected coordinates. It is designed to be dropped from a weather balloon at 10,000 feet of altitude."
                 src="stratoSoarMK2.png"
@@ -82,9 +82,9 @@ export default function Home() {
               <Project
                 content="This was an OpenCV resistor value finder that utilized complex mathematics to find the value of the resistor being held up to the webcam."
                 src="beantown.jpeg"
-                title="OpenCV Resistor Value Finder"
+                title="OpenCV Resistor Finder"
                 date="2023"
-                name="OpenCV Resistor Value Finder"
+                name="OpenCV Resistor Finder"
                 link="https://github.com/maxsrobotics/resistorfinder"
                 alt=""
               />

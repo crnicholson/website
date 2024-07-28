@@ -8,7 +8,7 @@ export default function Project(props: { content: string; src: string; link: str
                     {props.title}
                 </a>
                 <div className="p-2" />
-                <div className="sm:h-[250px] h-[200px] flex justify-between items-center overflow-hidden ">
+                <div className="sm:h-[200px] h-[150px] flex justify-between items-center overflow-hidden ">
                     <Image
                         src={"/" + props.src}
                         width={200}
@@ -27,33 +27,3 @@ export default function Project(props: { content: string; src: string; link: str
         </div>
     );
 };
-
-// import Image from "next/image";
-
-// export default function Project(props: { content: string; src: string; link: string; title: string; date: string; name: string; alt: string; }) {
-//     return (
-//         <div className="max-w-[350px]">
-//             <div className="shadow-lg rounded-lg bg-[#041D27] outline-2 outline-[#BDBDBD]">
-//                 <a target="_blank" href={props.link} className="hover:text-gray-600 text-2xl block text-left pl-4 pt-4">
-//                     {props.title}
-//                 </a>
-//                 <div className="sm:h-[250px] h-[200px] flex justify-between items-center overflow-hidden">
-//                     <div className="w-[200px] h-[200px] m-4 rounded-lg overflow-hidden flex-shrink-0">
-//                         <Image
-//                             src={"/" + props.src}
-//                             width={200}
-//                             height={200}
-//                             className="object-cover w-full h-full"
-//                             alt={props.alt}
-//                         />
-//                     </div>
-//                     <div className="h-full pl-2 pr-4">
-//                         <p className="text-[13px] pt-2">
-//                             {props.content}
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
