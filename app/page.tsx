@@ -9,67 +9,11 @@ import Project from "../components/project";
 export default function Home() {
   return (
     <>
-      <div className="relative font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose">
+      <div className="font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose">
         <Hero />
-        <main className="flex justify-center pb-10 pt-20 z-20 relative mt-[150px]">
+        <main className="flex justify-center pb-10">
           <div className="w-5/6 sm:w-3/5">
-            <Text
-              title="Charlie Nicholson"
-              content={<>
-                <a className="underline hover:text-gray-600" target="_blank" href="mailto:charlienicholsonr@gmail.com">charlienicholsonr@gmail.com</a>
-                <br></br>
-                <br></br>
-                <p>Hi. My name is Charlie. I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I{"'"}m not in my bedroom lab coding and tinkering, you can find me running and enjoying nature. <a className="underline hover:text-gray-600" target="_blank" href="/about">Here{"'"}s more about me.</a></p>
-              </>}
-              name="about"
-            />
-            <div className="flex flex-wrap gap-5 mb-5 justify-center">
-              <Button
-                href="https://github.com/crnicholson"
-                text="GitHub"
-                wiggle="wiggle-one-button"
-              />
-              <Button
-                href="https://www.youtube.com/@charlienicholsonr?sub_confirmation=1"
-                text="YouTube"
-                wiggle="wiggle-three-button"
-              />
-              <Button
-                href="https://www.qrz.com/db/KC1SFR"
-                text="QRZ Page"
-                wiggle="wiggle-two-button"
-              />
-              <Button
-                href="https://linktr.ee/charlienicholson"
-                text="LinkTree"
-                wiggle="wiggle-three-button"
-              />
-              <Button
-                href="https://www.venmo.com/u/CharlieNicholsonR"
-                text="Support Me"
-                wiggle="wiggle-one-button"
-              />
-            </div>
-            <Text
-              title="Accomplishments"
-              content={<>
-                <li>First place winner of the 2023 Beantown Bash Hackathon.</li>
-                <li>First place winner of the 2023 Wayland Science Fair.</li>
-                <li>Ham Radio Extra Class Licensee.</li>
-                <li>Presenter and author of two talks at the North East HamXposition.</li>
-                <li>Owner of a successful woodworking business.</li>
-              </>}
-              name="awards"
-            />
-            <Text
-              title="Experiences"
-              content={<>
-                <li>Volunteer IT director for New England Sci-Tech.</li>
-                <li>Soldering kit and circuit board designer for New England Sci-Tech.</li>
-                <li>Member of the youth subcommittee for the North East HamXposition.</li>
-              </>}
-              name="experiences"
-            />
+            <div className="pt-[100px]" />
             <Text
               title="Projects"
               content={<>
@@ -209,6 +153,27 @@ export default function Home() {
               - Self driving car
               */}
             </div>
+            <Text
+              title="Accomplishments"
+              content={<>
+                <li>First place winner of the 2023 Beantown Bash Hackathon.</li>
+                <li>First place winner of the 2023 Wayland Science Fair.</li>
+                <li>Ham Radio Extra Class Licensee.</li>
+                <li>Presenter and author of two talks at the North East HamXposition.</li>
+                <li>Owner of a successful woodworking business.</li>
+              </>}
+              name="awards"
+            />
+            <Text
+              title="Experiences"
+              content={<>
+                <li>Volunteer IT director for New England Sci-Tech.</li>
+                <li>Soldering kit and circuit board designer for New England Sci-Tech.</li>
+                <li>Member of the youth subcommittee for the North East HamXposition.</li>
+              </>}
+              name="experiences"
+            />
+
           </div>
         </main>
         <Slider />

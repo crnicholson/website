@@ -1,38 +1,75 @@
+import Button from "./button";
+import Image from "next/image";
+
 export default function Hero() {
     return (
         <>
-            <div className="relative bg-[#e0e1dd] overflow-x-clip">
-                <div id="slash" className="ml-[-700px] mt-[-600px] sm:ml-[-800px] absolute z-0 h-[150vh] sm:h-[115vh] sm:mt-[-20px] rounded-[800px] sm:w-[95vw] w-[90vh] bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500 rotate-3 filter opacity-[50%] blur-3xl sm:blur-lg md:ml-[-800px]" style={{ background: 'linear-gradient(60deg, #ff9e00, #ff165d, #ff38ef, #3a1c71, #d76d77, #ffaf7b)' }}></div>
-                <div className="relative z-10 h-screen flex flex-col sm:px-10">
-                    <div className="invisible sm:visible h-[5%] sm:h-[10%] flex flex-row items-center justify-end pr-2">
-                        <a href="#about" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
-                            About
-                        </a>
-                        <a href="#projects" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
-                            What I{"'"}ve Done
-                        </a>                    
-                        {/* <a href="#timeline" className="pr-3 italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a]">
-                            Timeline
-                        </a> */}
-                        <a href="#gallery" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
-                            Gallery
-                        </a>
-                    </div>
-                    <div className="h-[80%] flex flex-col justify-center items-center text-center">
-                        <h1 className="sm:text-8xl text-6xl font-bold text-[#0d1b2a]">
-                            Hi. I{"'"}m Charlie Nicholson.
+            <div className="bg-[#e0e1dd]  text-[#0d1b2a]">
+                <div className="p-10 pt-[200px] flex gap-5 justify-center">
+                    <div className="w-fit max-w-4xl">
+                        <p className="text-xl font-light">
+                            HEY THERE, I{"'"}M
+                        </p>
+                        <h1 className="sm:text-6xl text-5xl w-fit font-bold">
+                            Charlie Nicholson
                         </h1>
-                        <p className="text-2xl font-light text-[#0d1b2a]">
-                            I{"'"}m an engineer of all sorts.
+                        <p className="text-lg mt-4 max-w-xl mx-auto font-light">
+                            I am a freshman in high school in the suburbs of Boston. I go by cnicholson or crnicholson online and I aspire to be an electrical engineer. When I'm not in my bedroom lab coding and tinkering, you can find me running and enjoying nature. <a className="underline hover:text-gray-600" target="_blank" href="/about">Here's more about me.</a>
                         </p>
                     </div>
-                    <div className="h-[10%] flex flex-col justify-center items-center">
-                        <a href="#about" className="italic font-light underline decoration-dotted hover:decoration-solid text-[#0d1b2a] outline-dotted p-5 rounded-3xl bg-[#e0e1dd] opacity-60">
-                            Psst! There{"'"}s more.
-                        </a>
-                    </div>
+                    <Image
+                        src="/me.jpg"
+                        width={300}
+                        height={300}
+                        className="rounded-lg w-[200px] h-fit"
+                        alt="me"
+                    />
+                </div>
+                <div className="flex flex-wrap gap-5 mb-5 justify-center">
+                    <Button
+                        href="mailto:charlienicholsonr@gmail.com"
+                        text="Contact"
+                        wiggle="wiggle-one-button"
+                    />
+                    <Button
+                        href="https://github.com/crnicholson"
+                        text="GitHub"
+                        wiggle="wiggle-one-button"
+                    />
+                    <Button
+                        href="https://www.youtube.com/@charlienicholsonr?sub_confirmation=1"
+                        text="YouTube"
+                        wiggle="wiggle-three-button"
+                    />
+                    <Button
+                        href="https://www.qrz.com/db/KC1SFR"
+                        text="QRZ Page"
+                        wiggle="wiggle-two-button"
+                    />
+                    <Button
+                        href="https://linktr.ee/charlienicholson"
+                        text="LinkTree"
+                        wiggle="wiggle-three-button"
+                    />
+                    <Button
+                        href="https://www.venmo.com/u/CharlieNicholsonR"
+                        text="Support Me"
+                        wiggle="wiggle-one-button"
+                    />
                 </div>
             </div>
         </>
     );
 }
+
+/* <div className="invisible sm:visible h-[5%] sm:h-[10%] flex flex-row items-center justify-end pr-2">
+                        <a href="#about" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
+                            About
+                        </a>
+                        <a href="#projects" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
+                            What I{"'"}ve Done
+                        </a>
+                        <a href="#gallery" className="pr-3 italic font-light underline hover:text-gray-600 text-[#0d1b2a]">
+                            Gallery
+                        </a>
+                    </div> */

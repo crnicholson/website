@@ -27,14 +27,14 @@ export default function Home() {
                             link="https://github.com/crnicholson/StratoSoar-MK2"
                             alt=""
                             moreContent={
-                                <>
+                                <>\
                                     <PCBText
                                         title="Version 1"
                                         content={
                                             <>
                                                 <p className="pb-2">This was my first version of StratoSoar, StratoSoar MK2.0</p>
                                                 <Image
-                                                    src="/stratoSoarMK2.png" 
+                                                    src="/stratoSoarMK2.png"
                                                     width={300}
                                                     height={300}
                                                     className=" h-auto w-fit shadow-2xl rounded-lg"
