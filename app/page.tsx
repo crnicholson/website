@@ -49,7 +49,7 @@ export default function Home() {
                 link="https://ham.hackclub.com/"
                 alt=""
               />
-              <Project
+              {/* <Project
                 content="This website was created to showcase my projects and to give a little bit of information about me. It was created using Next.js and Tailwind CSS."
                 src="website.png"
                 title="Personal Website"
@@ -57,7 +57,7 @@ export default function Home() {
                 name="Personal Website"
                 link="/"
                 alt=""
-              />
+              /> */}
               <Project
                 content="This project involved creating my own seaweed-based bioplastic from scratch. Whilst it may have not been a huge success, I did make a strong, translucent plastic film that I hope to use in future project. I also learned lots about chemistry, biology, and experiments."
                 src="bioplastic.avif"
@@ -94,7 +94,7 @@ export default function Home() {
                 link="https://github.com/maxsrobotics/resistorfinder"
                 alt=""
               />
-              <Project
+              {/* <Project
                 content="This cutdown mechanism was designed to release StratoSoar from the balloon at a certain altitude. I packed it full of features like a GPS, LoRa for remote activation, and a temperature, humidity, and pressure sensor."
                 src="cutdownMechanism.jpg"
                 title="Cutdown Mechanism"
@@ -102,8 +102,8 @@ export default function Home() {
                 name="Cutdown Mechanism"
                 link="https://github.com/crnicholson/Cutdown-Mechanism"
                 alt=""
-              />
-              <Project
+              /> */}
+              {/* <Project
                 content="This was my first ever website, created only using vanilla JS, CSS, and HTML (yikes)! It calculate the carbon emissions of road trips and the number of trees needed to offset it."
                 src="coodos.png"
                 title="Coodos"
@@ -111,7 +111,7 @@ export default function Home() {
                 name="Coodos"
                 link="https://coodos.w3spaces.com/"
                 alt=""
-              />
+              /> */}
               {/* <Project
                 content="Better BOM takes your current schematic design - without part numbers - and finds the cheapest option available at the same time editing your schematic, all automatically."
                 src="softRobot.jpeg"
@@ -130,7 +130,7 @@ export default function Home() {
                 link="/"
                 alt=""
               /> */}
-              <Project
+              {/* <Project
                 content="This was a website I created with Next.js and Tailwind for Hack Club's Amateur Radio Club."
                 src="hcarc.png"
                 title="HCARC"
@@ -138,7 +138,7 @@ export default function Home() {
                 name="HCARC"
                 link="https://hcarc.vercel.app/"
                 alt=""
-              />
+              /> */}
               <Project
                 content="Come see my gallery of PCBs!"
                 src="stratoSoarMK2-IRL.png"

@@ -45,35 +45,26 @@ import Image from "next/image";
 
 export default function Project(props: { content: string; src: string; link: string; title: string; date: string; name: string; alt: string; }) {
     return (
-        <>
-            <div className="h-fit w-fit mt-4">
-                <a href={props.link} target="_blank">
-                    <div className="shadow-3xl sm:h-[250px] h-[200px] rounded-lg flex justify-center items-center w-fit">
-
-                        <Image
-                            src={"/" + props.src}
-                            width={200}
-                            height={200}
-                            className="rounded-lg h-full p-2"
-                            alt={props.alt}
-                        />
-
-                        <div className="">
-
-                            <h1 className="text-2xl italic font-bold">
-                                {props.title}
-                            </h1>
-                            <p className="text-[12px] italic">
-                                {props.date}
-                            </p>
-                            <p className="text-[13px] pt-5">
-                                {props.content}
-                            </p>
-
-                        </div>
-                    </div>
+        <div className="mt-4 max-w-[400px]">
+            <div className="shadow-lg rounded-lg">
+                <a target="_blank" href={props.link} className="hover:text-gray-600 text-2xl italic font-bold block text-left pl-2 pt-2">
+                    {props.title}
                 </a>
+                <div className="sm:h-[250px] h-[200px] flex justify-between items-center">
+                    <Image
+                        src={"/" + props.src}
+                        width={200}
+                        height={200}
+                        className="rounded-2xl w-fit h-full p-2"
+                        alt={props.alt}
+                    />
+                    <div className="h-full pl-2 pr-4">
+                        <p className="text-[13px] pt-2">
+                            {props.content}
+                        </p>
+                    </div>
+                </div>
             </div>
-        </>
+        </div>
     );
 };
