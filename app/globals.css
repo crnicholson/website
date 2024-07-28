@@ -17,6 +17,11 @@
   src: url("/Poppins-Regular.ttf")
 }
 
+@font-face {
+  font-family: "rubik";
+  src: url("/Rubik.ttf")
+}
+
 html,
 body {
   height: 100%;

@@ -4,13 +4,13 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <>
-            <div className="bg-[#e0e1dd]  text-[#0d1b2a]">
+            <div className="bg-[#03161F]  text-[#BDBDBD]">
                 <div className="p-10 pt-[200px] flex gap-5 justify-center">
                     <div className="w-fit max-w-4xl">
                         <p className="text-xl font-light">
                             HEY THERE, I{"'"}M
                         </p>
-                        <h1 className="sm:text-6xl text-5xl w-fit font-bold">
+                        <h1 className="text-[#2ECC71] sm:text-6xl text-5xl w-fit font-bold">
                             Charlie Nicholson
                         </h1>
                         <p className="text-lg mt-4 max-w-xl mx-auto font-light">

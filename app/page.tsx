@@ -9,19 +9,13 @@ import Project from "../components/project";
 export default function Home() {
   return (
     <>
-      <div className="font-[poppins] text-[#0d1b2a] bg-[#e0e1dd] prose">
+      <div className="font-[rubik] bg-[#03161F]  text-[#BDBDBD] prose">
         <Hero />
         <main className="flex justify-center pb-10">
           <div className="w-5/6 sm:w-3/5">
             <div className="pt-[100px]" />
-            <Text
-              title="Projects"
-              content={<>
-                <p>Here are some of the projects I{"'"}ve worked on. If you want to see some of my PCB projects, head over to <a target="_blank" href="/pcb" className="underline hover:text-gray-600">this page.</a></p>
-              </>}
-              name="projects"
-            />
-            <div className="flex flex-wrap items-center justify-center sm:justify-start">
+            <h1 className="text-4xl pb-5 text-[#2ECC71]">Projects</h1>
+            <div className="flex flex-wrap items-center gap-5 justify-center sm:justify-start">
               <Project
                 content="StratoSoar is a high-altitude Unmanned Autonomous Vehicle (UAV), capable of flying to selected coordinates. It is designed to be dropped from a weather balloon at 10,000 feet of altitude."
                 src="stratoSoarMK2.png"
@@ -59,7 +53,7 @@ export default function Home() {
                 alt=""
               /> */}
               <Project
-                content="This project involved creating my own seaweed-based bioplastic from scratch. Whilst it may have not been a huge success, I did make a strong, translucent plastic film that I hope to use in future project. I also learned lots about chemistry, biology, and experiments."
+                content="This project involved creating my own seaweed-based bioplastic from scratch. Whilst it may have not been a huge success, I did make a strong, translucent plastic film that I hope to use in future project."
                 src="bioplastic.avif"
                 title="Bioplastic"
                 date="2023"
@@ -153,6 +147,7 @@ export default function Home() {
               - Self driving car
               */}
             </div>
+            <div className="pt-7" />
             <Text
               title="Accomplishments"
               content={<>

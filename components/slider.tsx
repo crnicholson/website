@@ -33,7 +33,7 @@ export default function Slider() {
         <>
             <div id="gallery" className="w-full flex justify-center mb-10 relative">
                 <div className="w-5/6 sm:w-3/5">
-                    <h1 className="text-5xl font-bold pb-5 pt-5">Gallery</h1>
+                    <h1 className="text-4xl text-[#2ECC71] pb-5">Gallery</h1>
                     <a className="underline hover:text-gray-600" href="/pcb">Also see my PCB gallery!</a>
                 </div>
             </div>
