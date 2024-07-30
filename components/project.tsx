@@ -4,7 +4,7 @@ export default function Project(props: { content: string; src: string; link: str
     return (
         <div className="w-[350px]">
             <div className="shadow-lg rounded-lg bg-[#041D27] outline-2 outline-[#BDBDBD]">
-                <a target="_blank" href={props.link} className=" hover:text-gray-600 text-2xl block text-left pl-4 pt-4">
+                <a target="_blank" href={props.link} className="underline decoration-[#BDBDBD] hover:text-gray-600 text-2xl block text-left pl-4 pt-4">
                     {props.title}
                 </a>
                 <div className="p-2" />
@@ -17,7 +17,7 @@ export default function Project(props: { content: string; src: string; link: str
                         alt={props.alt}
                     />
                     <div className="h-full pl-2 pr-4">
-                        <p className="text-[13px] pt-2">
+                        <p className="text-[13px]">
                             {props.content}
                         </p>
                     </div>

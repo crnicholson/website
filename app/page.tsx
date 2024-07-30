@@ -149,22 +149,103 @@ export default function Home() {
             </div>
             <div className="pt-7" />
             <Text
-              title="Accomplishments"
+              title="Things I've Done"
               content={<>
-                <li>First place winner of the 2023 Beantown Bash Hackathon.</li>
-                <li>First place winner of the 2023 Wayland Science Fair.</li>
-                <li>Ham Radio Extra Class Licensee.</li>
-                <li>Presenter and author of two talks at the North East HamXposition.</li>
-                <li>Owner of a successful woodworking business.</li>
+                <Button
+                  href=""
+                  text="2023"
+                  wiggle="wiggle-one-button"
+                />
+                First place winner of the 2023 Beantown Bash Hackathon.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2023"
+                  wiggle="wiggle-one-button"
+                />
+                First place winner of the 2023 Wayland Science Fair.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2023"
+                  wiggle="wiggle-one-button"
+                />
+                Presenter and author of two talks at the North East HamXposition.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2020-2023"
+                  wiggle="wiggle-one-button"
+                />
+                Owner of a successful woodworking business.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2022"
+                  wiggle="wiggle-one-button"
+                />
+                Ham Radio Extra Class Licensee.
+                <br />
+
               </>}
               name="awards"
             />
             <Text
               title="Experiences"
               content={<>
-                <li>Volunteer IT director for New England Sci-Tech.</li>
-                <li>Soldering kit and circuit board designer for New England Sci-Tech.</li>
-                <li>Member of the youth subcommittee for the North East HamXposition.</li>
+
+                <Button
+                  href=""
+                  text="2024-"
+                  wiggle="wiggle-one-button"
+                />
+                Director for the Hack Club Amateur Radio Club.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2024-"
+                  wiggle="wiggle-one-button"
+                />
+                Youth Ambassador, Collegiate Outreach, and Science Advisor the Sci-Tech Amateur Radio Society.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2024-"
+                  wiggle="wiggle-one-button"
+                />
+                Volunteer Leadership Staff at New England Sci-Tech.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2023-"
+                  wiggle="wiggle-one-button"
+                />
+                Member of The Youth Subcommittee of The North East HamXposition.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2022-"
+                  wiggle="wiggle-one-button"
+                />
+                Volunteer IT Director, circuit board designer, and consultant for New England Sci-Tech.
+                <br />
+
               </>}
               name="experiences"
             />
