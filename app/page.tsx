@@ -151,6 +151,34 @@ export default function Home() {
             <Text
               title="Things I've Done"
               content={<>
+                
+                <Button
+                  href=""
+                  text="2024"
+                  wiggle="wiggle-one-button"
+                />
+                4th out of 2000+ in the Hack Club Arcade Showcase.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2024"
+                  wiggle="wiggle-one-button"
+                />
+                Recipient of the Bagel Fund grant for my research in StratoSoar.
+                <br />
+
+                 <br />
+                <Button
+                  href=""
+                  text="2024"
+                  wiggle="wiggle-one-button"
+                />
+                Presenter and author of a talk in the Northeast HamXposistion.
+                <br />
+
+                <br />
                 <Button
                   href=""
                   text="2023"
@@ -208,6 +236,15 @@ export default function Home() {
                   wiggle="wiggle-one-button"
                 />
                 Director for the Hack Club Amateur Radio Club.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2024-"
+                  wiggle="wiggle-one-button"
+                />
+                Co-founder and co-leader of a local Hack Club.
                 <br />
 
                 <br />
