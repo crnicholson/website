@@ -17,25 +17,34 @@ export default function Home() {
             <h1 className="text-4xl pb-5 text-[#2ECC71]">Projects</h1>
             <div className="flex flex-wrap items-center gap-5 justify-center">
               <Project
-                content="StratoSoar is a high-altitude Unmanned Autonomous Vehicle (UAV), capable of flying to selected coordinates. It is designed to be dropped from a weather balloon at 10,000 feet of altitude."
+                content="This is a glider dropped from a weather balloon that autonomously flies down to GPS coordinates to make high-altitude research more accessible to educators, hobbyists, and researchers."
+                src="stratosoarMK3.png"
+                title="StratoSoar MK3"
+                date="2024-"
+                name="StratoSoar"
+                link="https://www.github.com/crnicholson/StratoSoar-MK3"
+                alt=""
+              />
+              <Project
+                content="StratoSoar is a high-altitude Unmanned Autonomous Vehicle (UAV), capable of flying to selected coordinates. I successfully launched from 5,000 feet in the summer of 2024, and the latest work has been completed on MK3."
                 src="stratoSoarMK2.png"
                 title="StratoSoar MK2"
-                date="2023-"
+                date="2023-2024"
                 name="StratoSoar"
                 link="https://www.github.com/crnicholson/StratoSoar-MK2"
                 alt=""
               />
               <Project
-                content="This carbon capture project is a DIY carbon capture machine that removes CO2 from the atmosphere. It was a summer project between seventh and eighth grade and I learned tons."
+                content="This carbon capture project is a DIY carbon capture machine that removes CO2 from the atmosphere, along with a complete guide on how to make your own and a paper behind it."
                 src="ccProject.jpeg"
                 title="Carbon Capture"
                 date="2023"
                 name="Carbon Capture"
-                link="https://nicholsonlabs.gitbook.io/labs/carbon-capture"
+                link="https://github.com/crnicholson/Carbon-Capture"
                 alt=""
               />
               <Project
-                content="This was a project in conjunction with Hack Club that gave youth ham radios if they got their license. I was the co-founder and I spearheaded web design along with the curriculum, planning and organization."
+                content="This was a project with Hack Club that gave youth ham radios if they got licensed. I was the co-founder and I led web design along with the curriculum, planning and organization."
                 src="hamclub.png"
                 title="Ham Club"
                 date="2024"
@@ -53,7 +62,7 @@ export default function Home() {
                 alt=""
               /> */}
               <Project
-                content="This project involved creating my own seaweed-based bioplastic from scratch. Whilst it may have not been a huge success, I did make a strong, translucent plastic film that I hope to use in future project."
+                content="I made my own seaweed-based bioplastic from scratch. While it may have not been a huge success, I did make a strong, translucent plastic film which will be sused in future projects."
                 src="bioplastic.avif"
                 title="Bioplastic"
                 date="2023"
@@ -80,7 +89,7 @@ export default function Home() {
                 alt=""
               />
               <Project
-                content="This was an OpenCV resistor value finder that utilized complex mathematics to find the value of the resistor being held up to the webcam."
+                content="This was an OpenCV resistor value finder that used algorithims to find the value of the resistor being held up to the webcam."
                 src="beantown.jpeg"
                 title="OpenCV Resistor Finder"
                 date="2023"
@@ -176,6 +185,15 @@ export default function Home() {
                   wiggle="wiggle-one-button"
                 />
                 Presenter and author of a talk in the Northeast HamXposistion.
+                <br />
+
+                <br />
+                <Button
+                  href=""
+                  text="2024"
+                  wiggle="wiggle-one-button"
+                />
+                GitHub Universe - personally invited by Kyle Daigle, COO of GitHub, to come.
                 <br />
 
                 <br />

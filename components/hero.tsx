@@ -35,7 +35,17 @@ export default function Hero() {
                     <Button
                         href="https://github.com/crnicholson"
                         text="GitHub"
+                        wiggle="wiggle-three-button"
+                    />
+                    <Button
+                        href="https://www.linkedin.com/in/charles-richard-nicholson/"
+                        text="LinkedIn"
                         wiggle="wiggle-one-button"
+                    />
+                    <Button
+                        href="https://www.read.cv/crn"
+                        text="My CV"
+                        wiggle="wiggle-two-button"
                     />
                     <Button
                         href="https://www.youtube.com/@charlienicholsonr?sub_confirmation=1"
