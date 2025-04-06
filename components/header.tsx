@@ -7,7 +7,7 @@ interface HeaderProps {
     children: React.ReactNode;
 }
 
-export function Header(HeaderProps) {
+export function Header({ children }: HeaderProps) {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -27,23 +27,23 @@ export function Header(HeaderProps) {
                 }`}
         >
             <div className="max-w-8xl p-6 h-16 flex items-center justify-between">
-                {HeaderProps.children}
+                {children}
             </div>
         </div>
     );
 };
 
-export function HeaderLogo(HeaderProps) {
+export function HeaderLogo({ href, className, children }: HeaderProps) {
     return (
-        <Link href={HeaderProps.href} className={`text-xl font-semibold ${HeaderProps.className}`}>
-            {HeaderProps.children}
+        <Link href={href} className={`text-xl font-semibold ${className}`}>
+            {children}
         </Link>
     );
 }
 
-export function HeaderNav(HeaderProps) {
+export function HeaderNav({ href, className, children }: HeaderProps) {
     return (
-        <div className="flex flex-row gap-3 items-center justify-center w-fit h-full">{HeaderProps.children}</div>
+        <div className="flex flex-row gap-3 items-center justify-center w-fit h-full">{children}</div>
     );
 }
 
