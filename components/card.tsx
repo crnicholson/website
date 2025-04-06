@@ -16,8 +16,8 @@ interface CardProps {
     onMouseEnter?: () => void;
     onMouseLeave?: () => void;
     max?: number;
-    onKeyDown?: (e) => void;
-    onScroll?: (e) => void;
+    onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+    onScroll?: (e: React.UIEvent<HTMLDivElement>) => void;
 }
 
 export function Card({ children, className, onMouseEnter, onMouseLeave }: CardProps) {
@@ -49,7 +49,7 @@ export function CardTitle({ size = 1, children, className }: CardProps) {
         3: "text-2xl",
         4: "text-3xl",
     };
-    const textSize = sizeClasses[size] || "text-lg";
+    const textSize = sizeClasses[size as keyof typeof sizeClasses] || "text-lg";
 
     return <h1 className={`mb-2 font-[tiempos] ${textSize} ${className}`}>{children}</h1>;
 }
