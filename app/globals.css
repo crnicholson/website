@@ -130,14 +130,14 @@ html {
   }
 
   100% {
-    transform: translateX(calc(-320px * 18));
+    transform: translateX(calc(-320px * 15));
   }
 }
 
 .scrolling-wrapper {
   display: flex;
   animation: scroll 15s linear infinite;
-  width: calc((300px + 20px) * 18 * 2);
+  width: calc((300px + 20px) * 15 * 2);
   gap: 20px;
 }
 
