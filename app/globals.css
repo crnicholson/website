@@ -1,31 +1,119 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
-  font-family: "blox";
-  src: url("/blox.ttf")
+  font-family: "tiempos";
+  display: swap;
+  src: url("../public/TiemposHeadline-Regular.otf");
 }
 
 @font-face {
-  font-family: "heming";
-  src: url("/Heming Variable.ttf")
+  font-family: "tiemposBlack";
+  display: swap;
+  src: url("../public/TiemposHeadline-Black.otf");
 }
 
 @font-face {
-  font-family: "poppins";
-  src: url("/Poppins-Regular.ttf")
+  font-family: "tiemposLight";
+  display: swap;
+  src: url("../public/TiemposHeadline-Light.otf");
 }
 
 @font-face {
-  font-family: "rubik";
-  src: url("/Rubik.ttf")
+  font-family: "tiemposBold";
+  display: swap;
+  src: url("../public/TiemposHeadline-Bold.otf");
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
+@theme {
+  --color-accent: #FFA362;
+  --color-primary: #57534e;
+  --color-bg: #FBFBF9;
+  --color-card-bg: #F7F6EF;
+  --color-border: #e7e5e4;
+  --color-light: #5d5956;
+  --color-link-hover: #7d7875;
+  --color-lighter: #a8a29e;
+  --font-family-tiempos: "tiempos", serif;
+  --font-family-tiempos-light: "tiemposLight", serif;
+  --font-family-tiempos-bold: "tiemposBold", serif;
+  --font-family-tiempos-black: "tiemposBlack", serif;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rainbow-bg {
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400% 400%;
+  animation: rainbow 10s ease infinite;
+  transition: all 0.3s ease;
+}
+
+.rainbow-bg:hover {
+  background: #808080;
+  animation: none;
 }
 
 html {
@@ -42,15 +130,14 @@ html {
   }
 
   100% {
-    transform: translateX(calc(-320px * 25));
+    transform: translateX(calc(-320px * 18));
   }
 }
 
 .scrolling-wrapper {
   display: flex;
-  animation: scroll 60s linear infinite;
-  width: calc((300px + 20px) * 25 * 2);
-  /* Adjust the width to fit all images (25 original images * 2 for duplication), include gap */
+  animation: scroll 15s linear infinite;
+  width: calc((300px + 20px) * 18 * 2);
   gap: 20px;
 }
 
@@ -58,79 +145,4 @@ html {
   flex: 0 0 auto;
   width: 300px;
   margin: 0;
-}
-
-@keyframes wiggle-one {
-  0% {
-    rotate: -5deg;
-  }
-
-  50% {
-    rotate: 5deg;
-  }
-
-  100% {
-    rotate: -5deg;
-  }
-}
-
-.wiggle-one-button {
-  animation: wiggle-one 2s linear infinite;
-}
-
-@keyframes wiggle-two {
-  0% {
-    rotate: -10deg;
-  }
-
-  50% {
-    rotate: 10deg;
-  }
-
-  100% {
-    rotate: -10deg;
-  }
-}
-
-.wiggle-two-button {
-  animation: wiggle-two 5s linear infinite;
-}
-
-@keyframes wiggle-three {
-  0% {
-    rotate: -3deg;
-  }
-
-  50% {
-    rotate: 5deg;
-  }
-
-  100% {
-    rotate: -3deg;
-  }
-}
-
-.wiggle-three-button {
-  animation: wiggle-three 1s linear infinite;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }

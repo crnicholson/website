@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/react';
+import Footer from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-export const metadata: Metadata = {
-  title: "Charlie Nicholson's Personal Website",
-  description: "Charlie Nicholson's Personal Website",
+export const metadata = {
+  title: "Charle Nicholson",
+  description: "Peronsal website of Charle Nicholson",
 };
 
 export default function RootLayout({
@@ -14,9 +15,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
-        {children}
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="stylesheet"
+        />
         <Analytics />
+        <SpeedInsights />
+      </head>
+      <body
+        className="antialiased vsc-initialized text-primary min-h-screen w-full bg-bg flex flex-col justify-center items-center"
+      >
+        {children}
+        <Footer />
       </body>
     </html>
   );

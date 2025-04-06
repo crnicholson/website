@@ -1,11 +1,17 @@
+import StyledLink from "./styledLink";
+
 export default function Footer() {
-    const d = new Date();
-    let year = d.getFullYear();
     return (
-        <>
-            <div className="z-0 mt-5 px-5 pb-5 flex flex-col justify-center items-center bg-transparent text-gray-600 text-sm">
-                <p>Made with Next.js. Hosted by Vercel <a className="underline hover:text-gray-500" href="https://github.com/crnicholson/website">and on GitHub</a>. Licensed under MIT. © {year} Charles Nicholson.</p>
-            </div>
-        </>
+        <footer className="border border-border bg-card-bg rounded-xl p-4 shadow-lg mt-[60px] mx-5 mb-5 w-fit">
+            <p>
+                © {new Date().getFullYear()} Charles Nicholson. Open source on{" "}
+                <StyledLink
+                    href="www.github.com/crnicholson/website"
+                >
+                    GitHub
+                </StyledLink>{" "}
+                and hosted on Vercel. Licensed under MIT.
+            </p>
+        </footer>
     );
-};
+}
