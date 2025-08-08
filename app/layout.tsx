@@ -1,5 +1,6 @@
 import "./globals.css";
 import Footer from "@/components/footer";
+import GrainControls from "@/components/grainControls";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -24,10 +25,11 @@ export default function RootLayout({
         <SpeedInsights />
       </head>
       <body
-        className="antialiased vsc-initialized text-primary min-h-screen w-full bg-bg flex flex-col justify-center items-center"
+        className="antialiased vsc-initialized text-primary min-h-screen w-full bg-bg flex flex-col justify-center items-center grain-overlay"
       >
         {children}
         <Footer />
+        <GrainControls />
       </body>
     </html>
   );
