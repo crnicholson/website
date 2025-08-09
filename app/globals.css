@@ -147,13 +147,12 @@ html {
   margin: 0;
 }
 
-/* Natural grain effect */
 :root {
   --grain-opacity: 0.5;
   --grain-frequency: 0.45;
   --grain-randomness: 5;
   --grain-size: 230px;
-  --grain-color: 172,115,43;
+  --grain-color: 172, 115, 43;
   --grain-svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.8'/%3E%3C/svg%3E");
 }
 
@@ -218,7 +217,7 @@ html {
   cursor: pointer;
   border: none;
   transform: rotate(45deg) skew(2deg);
-  box-shadow: 
+  box-shadow:
     0 0 0 2px var(--color-bg),
     0 4px 8px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -229,7 +228,7 @@ html {
 .grain-slider::-webkit-slider-thumb:hover {
   background: conic-gradient(from 180deg, var(--color-primary), var(--color-accent), var(--color-primary));
   transform: rotate(45deg) skew(2deg) scale(1.2);
-  box-shadow: 
+  box-shadow:
     0 0 0 3px var(--color-bg),
     0 6px 12px rgba(0, 0, 0, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.4),
@@ -248,7 +247,7 @@ html {
   cursor: pointer;
   border: none;
   transform: rotate(45deg) skew(2deg);
-  box-shadow: 
+  box-shadow:
     0 0 0 2px var(--color-bg),
     0 4px 8px rgba(0, 0, 0, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -258,7 +257,7 @@ html {
 .grain-slider::-moz-range-thumb:hover {
   background: conic-gradient(from 180deg, var(--color-primary), var(--color-accent), var(--color-primary));
   transform: rotate(45deg) skew(2deg) scale(1.2);
-  box-shadow: 
+  box-shadow:
     0 0 0 3px var(--color-bg),
     0 6px 12px rgba(0, 0, 0, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.4),
@@ -276,12 +275,10 @@ html {
 
 /* Frequency slider - wavy design */
 .frequency-slider {
-  background: repeating-linear-gradient(
-    90deg,
-    var(--color-border) 0px,
-    var(--color-lighter) 10px,
-    var(--color-border) 20px
-  ) !important;
+  background: repeating-linear-gradient(90deg,
+      var(--color-border) 0px,
+      var(--color-lighter) 10px,
+      var(--color-border) 20px) !important;
   border-radius: 50px !important;
   transform: skew(0deg) !important;
 }
@@ -299,17 +296,14 @@ html {
   background: radial-gradient(circle, var(--color-primary), var(--color-accent)) !important;
 }
 
-/* Randomness slider - zigzag design */
 .randomness-slider {
-  background: linear-gradient(
-    45deg,
-    var(--color-border) 25%,
-    transparent 25%,
-    transparent 50%,
-    var(--color-border) 50%,
-    var(--color-border) 75%,
-    transparent 75%
-  ) !important;
+  background: linear-gradient(45deg,
+      var(--color-border) 25%,
+      transparent 25%,
+      transparent 50%,
+      var(--color-border) 50%,
+      var(--color-border) 75%,
+      transparent 75%) !important;
   background-size: 8px 8px !important;
   transform: skew(5deg) !important;
   border-radius: 0 !important;
@@ -350,7 +344,6 @@ html {
   border-radius: 50% !important;
 }
 
-/* Custom color input styling */
 .grain-color-input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -386,14 +379,45 @@ html {
 }
 
 @keyframes grain {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  10% { transform: translate(-5%, -10%) rotate(1deg); }
-  20% { transform: translate(-15%, 5%) rotate(-1deg); }
-  30% { transform: translate(5%, -25%) rotate(0deg); }
-  40% { transform: translate(-5%, 25%) rotate(1deg); }
-  50% { transform: translate(-15%, 10%) rotate(-1deg); }
-  60% { transform: translate(15%, 0%) rotate(0deg); }
-  70% { transform: translate(0%, 15%) rotate(1deg); }
-  80% { transform: translate(-10%, -15%) rotate(-1deg); }
-  90% { transform: translate(10%, 5%) rotate(0deg); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-5%, -10%) rotate(1deg);
+  }
+
+  20% {
+    transform: translate(-15%, 5%) rotate(-1deg);
+  }
+
+  30% {
+    transform: translate(5%, -25%) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(-5%, 25%) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-15%, 10%) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(15%, 0%) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(0%, 15%) rotate(1deg);
+  }
+
+  80% {
+    transform: translate(-10%, -15%) rotate(-1deg);
+  }
+
+  90% {
+    transform: translate(10%, 5%) rotate(0deg);
+  }
 }

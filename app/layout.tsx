@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/footer";
 import GrainControls from "@/components/grainControls";
+import EasterEggs from "@/components/easterEggs";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <GrainControls />
+        <EasterEggs />
       </body>
     </html>
   );
