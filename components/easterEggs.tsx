@@ -20,7 +20,7 @@ export default function EasterEggs() {
     };
 
     window.addEventListener('activateMatrix', handleMatrixActivation);
-    
+
     return () => {
       window.removeEventListener('activateMatrix', handleMatrixActivation);
     };

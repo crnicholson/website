@@ -28,7 +28,7 @@ export default function MatrixEffect({ isActive = false }: MatrixEffectProps) {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
-    
+
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
@@ -82,7 +82,7 @@ export default function MatrixEffect({ isActive = false }: MatrixEffectProps) {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 z-[9999] pointer-events-none"
-      style={{ 
+      style={{
         background: 'black',
         pointerEvents: 'none'
       }}
