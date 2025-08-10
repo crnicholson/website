@@ -19,12 +19,12 @@ export default function MdxPage({
     return (
         <>
             <div className="hidden md:visible z-50 md:flex items-center justify-between border-b border-border h-16 w-full px-4 sm:px-6 lg:px-8">
-                <h1 className="font-[tiempos] text-lg">charlie nicholson</h1>
+                <Link href="/" className="font-[tiempos] text-lg">charlie nicholson</Link>
                 <div className="flex gap-4">
-                    <Link href="/#projects">Projects</Link>
-                    <Link href="/#achievements">Achievements</Link>
-                    <Link href="/#skills">Skills</Link>
-                    <Link href="/#experiences">Experiences</Link>
+                    <Link className="border border-border rounded-full h-fit py-1 px-2 text-xs bg-card-bg" href="/#projects">Projects</Link>
+                    {/* <Link className="border border-border rounded-full h-fit py-1 px-2 text-xs bg-card-bg" href="/#achievements">Achievements</Link>
+                    <Link className="border border-border rounded-full h-fit py-1 px-2 text-xs bg-card-bg" href="/#skills">Skills</Link>
+                    <Link className="border border-border rounded-full h-fit py-1 px-2 text-xs bg-card-bg" href="/#experiences">Experiences</Link> */}
                 </div>
             </div>
             <div className="flex flex-col min-h-screen md:-mt-16 pt-30 w-full z-10 items-center justify-between">
