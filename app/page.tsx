@@ -6,6 +6,7 @@ import BadgeButton from "@/components/badgeButton";
 import Badge from "@/components/badge";
 import Project from "@/components/project";
 import Carousel from "@/components/carousel";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -81,7 +82,7 @@ export default function Home() {
             Skills
           </div>
         </div>
-      </div >
+      </div>
 
       <div className="z-10 md:-mt-16 min-h-screen w-full flex flex-col gap-10 justify-center items-center">
         <div className="w-full flex flex-col items-center justify-center">
@@ -368,6 +369,8 @@ export default function Home() {
         { src: "/images/slider/stratoSoarMK2.png", alt: "StratoSoar MK2" },
         { src: "/images/slider/wing.png", alt: "Wing" },
       ]} />
+
+      <Footer />
     </>
   )
 }

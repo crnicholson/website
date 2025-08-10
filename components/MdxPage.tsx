@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
+import StyledLink from '@/components/styledLink';
 import Link from 'next/link';
+import Footer from '@/components/footer';
 
 interface MdxPageProps {
     children: React.ReactNode;
@@ -15,21 +17,33 @@ export default function MdxPage({
     showBackLink = true
 }: MdxPageProps) {
     return (
-        <div className="min-h-screen px-4 lg:px-20 py-20">
-            <div className="max-w-4xl mx-auto">
-                {showBackLink && (
-                    <Link href={backHref} className="inline-flex items-center hover:underline mb-8">
-                        {backText}
-                    </Link>
-                )}
-
-                {children}
+        <>
+            <div className="hidden md:visible z-50 md:flex items-center justify-between border-b border-border h-16 w-full px-4 sm:px-6 lg:px-8">
+                <h1 className="font-[tiempos] text-lg">charlie nicholson</h1>
+                <div className="flex gap-4">
+                    <Link href="/#projects">Projects</Link>
+                    <Link href="/#achievements">Achievements</Link>
+                    <Link href="/#skills">Skills</Link>
+                    <Link href="/#experiences">Experiences</Link>
+                </div>
             </div>
-        </div>
+            <div className="flex flex-col min-h-screen md:-mt-16 pt-30 w-full z-10 items-center justify-between">
+                {/* {showBackLink && (
+                        <StyledLink href={backHref} className="inline-flex mb-14">
+                            {backText}
+                        </StyledLink>
+                    )} */}
+
+                <div className="w-2/3 px-20">
+                    {children}
+                </div>
+
+                <Footer />
+            </div>
+        </>
     );
 }
 
-// Export a helper function to generate metadata for MDX pages
 export function createMdxMetadata({
     title,
     description

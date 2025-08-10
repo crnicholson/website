@@ -29,7 +29,6 @@ export default function RootLayout({
         className="antialiased vsc-initialized text-primary min-h-screen w-full bg-bg flex flex-col justify-center items-center grain-overlay"
       >
         {children}
-        <Footer />
         <GrainControls />
         <EasterEggs />
       </body>
