@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import StyledLink from '@/components/styledLink';
 import Link from 'next/link';
 import Footer from '@/components/footer';
 
@@ -8,13 +7,19 @@ interface MdxPageProps {
     backHref?: string;
     backText?: string;
     showBackLink?: boolean;
+    publishedDate?: string;
+    editedDate?: string;
+    title?: string;
 }
 
 export default function MdxPage({
     children,
     backHref = "/",
     backText = "← Back to Home",
-    showBackLink = true
+    showBackLink = true,
+    publishedDate = "January 1st, 2020",
+    editedDate = "",
+    title = "Blog Post"
 }: MdxPageProps) {
     return (
         <>
@@ -35,11 +40,18 @@ export default function MdxPage({
                     )} */}
 
                 <div className="w-2/3 px-20">
+                    <h1 className="font-[tiempos] text-4xl mb-7">
+                        {title}
+                    </h1>
+                    <div className="text-sm text-link-hover mb-7">
+                        {editedDate ? <p className="mb-2">First published on: {publishedDate}</p> : <p>{publishedDate}</p>}
+                        {editedDate && <p>Edited on: {editedDate}</p>}
+                    </div>
+                    <div className="mb-7 border-b border-border"></div>
                     {children}
                 </div>
-
                 <Footer />
-            </div>
+            </div >
         </>
     );
 }
