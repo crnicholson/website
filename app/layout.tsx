@@ -1,4 +1,5 @@
 import "./globals.css";
+import { useEffect } from "react";
 import Footer from "@/components/footer";
 import GrainControls from "@/components/grainControls";
 import EasterEggs from "@/components/easterEggs";
