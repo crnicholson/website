@@ -2,6 +2,7 @@
 import type { MDXComponents } from 'mdx/types';
 import Link from 'next/link';
 import Image from 'next/image';
+import MdxImage from './components/MdxImage';
 import Badge from './components/badge';
 import { Card } from './components/card';
 
@@ -89,11 +90,11 @@ const components: MDXComponents = {
     //     );
     // },
 
-    // blockquote: ({ children, ...props }) => (
-    //     <blockquote className="border-l-4 border-accent bg-card/70 pl-6 py-4 mb-8 italic text-lg shadow-sm rounded-xl" {...props}>
-    //         <span className="text-accent font-bold mr-2">“</span>{children}<span className="text-accent font-bold ml-2">”</span>
-    //     </blockquote>
-    // ),
+    blockquote: ({ children, ...props }) => (
+        <blockquote className="border-l-4 border-gray-200 pl-6 py-4 mb-8 italic text-sm block [&>p]:m-0" {...props}>
+            {children}
+        </blockquote>
+    ),
 
     // table: ({ children, ...props }) => (
     //     <div className="overflow-x-auto mb-8">
@@ -132,18 +133,7 @@ const components: MDXComponents = {
     //     <hr className="border-0 h-1 bg-gradient-to-r from-accent/30 via-primary/20 to-accent/30 my-10 rounded-full" {...props} />
     // ),
 
-    img: ({ src, alt, ...props }) => (
-        <div className="w-full flex justify-center mb-5">
-            <Image
-                src={src || ''}
-                alt={alt || ''}
-                width={500}
-                height={500}
-                className="object-cover rounded-xl"
-                {...props}
-            />
-        </div>
-    ),
+    MdxImage: MdxImage,
 
     strong: ({ children, ...props }) => (
         <strong className="font-bold" {...props}>
