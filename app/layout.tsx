@@ -7,8 +7,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
-  title: "Charle Nicholson",
-  description: "Peronsal website of Charle Nicholson",
+  title: "Charlie Nicholson",
+  description: "Personal website of Charlie Nicholson",
 };
 
 export default function RootLayout({

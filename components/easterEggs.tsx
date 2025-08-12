@@ -126,13 +126,13 @@ export default function EasterEggs() {
     };
   }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setMelting(true);
-      setTimeout(() => setShowDvd(true), 366400); // Show DVD after melt anim
-    }, 360000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setMelting(true);
+  //     setTimeout(() => setShowDvd(true), 366400); // Show DVD after melt anim
+  //   }, 360000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   const handleKonamiActivation = () => {
     setShowMatrix(true);
@@ -149,7 +149,7 @@ export default function EasterEggs() {
       if (e.clipboardData) {
         e.clipboardData.setData('text/plain', text);
       } else if (window && 'clipboardData' in window) {
-        window.clipboardData.setData('Text', text);
+        (window as Window & typeof globalThis & { clipboardData?: { setData: (format: string, data: string) => void } }).clipboardData?.setData('Text', text);
       }
     };
     document.addEventListener('copy', handleCopy);
@@ -158,25 +158,25 @@ export default function EasterEggs() {
     };
   }, []);
 
-  useEffect(() => {
-    const main = typeof window !== 'undefined' ? document.getElementById('main-content') : null;
-    if (melting && main) {
-      main.classList.add('melting-page');
-    } else if (main) {
-      main.classList.remove('melting-page');
-    }
-    return () => {
-      if (main) main.classList.remove('melting-page');
-    };
-  }, [melting]);
+  // useEffect(() => {
+  //   const main = typeof window !== 'undefined' ? document.getElementById('main-content') : null;
+  //   if (melting && main) {
+  //     main.classList.add('melting-page');
+  //   } else if (main) {
+  //     main.classList.remove('melting-page');
+  //   }
+  //   return () => {
+  //     if (main) main.classList.remove('melting-page');
+  //   };
+  // }, [melting]);
 
   return (
     <>
-      <style>{meltingStyle}</style>
+      {/* <style>{meltingStyle}</style> */}
       <KonamiCodeEasterEgg onActivate={handleKonamiActivation} />
       <CharlieRotationEasterEgg />
       <MatrixEffect isActive={showMatrix} />
-      {showDvd && <DvdBounceOverlay onReload={() => window.location.reload()} />}
+      {/* {showDvd && <DvdBounceOverlay onReload={() => window.location.reload()} />} */}
     </>
   );
 }

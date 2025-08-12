@@ -37,12 +37,12 @@ const components: MDXComponents = {
         </h1>
     ),
     h2: ({ children, ...props }) => (
-        <h2 className="font-[tiempos] text-3xl mb-8" {...props}>
+        <h2 className="font-[tiempos] text-3xl mb-6 mt-10" {...props}>
             {children}
         </h2>
     ),
     h3: ({ children, ...props }) => (
-        <h3 className="font-[tiempos] text-2xl mb-8" {...props}>
+        <h3 className="font-[tiempos] text-2xl mb-5 mt-9" {...props}>
             {children}
         </h3>
     ),
@@ -54,17 +54,17 @@ const components: MDXComponents = {
     ),
 
     ul: ({ children, ...props }) => (
-        <ul className="text-base md:text-lg mb-4 space-y-2 pl-6 list-disc marker:text-accent/80" {...props}>
+        <ul className="mb-4 space-y-2 pl-6 list-disc" {...props}>
             {children}
         </ul>
     ),
     ol: ({ children, ...props }) => (
-        <ol className="text-base md:text-lg mb-4 space-y-2 pl-6 list-decimal marker:text-accent/80" {...props}>
+        <ol className="mb-4 space-y-2 pl-6 list-decimal" {...props}>
             {children}
         </ol>
     ),
     li: ({ children, ...props }) => (
-        <li className="text-primary/90 leading-relaxed font-[tiempos]" {...props}>
+        <li className="leading-relaxed" {...props}>
             {children}
         </li>
     ),

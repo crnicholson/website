@@ -17,7 +17,7 @@ export default function Footer() {
             <p>
                 © {new Date().getFullYear()} Charles Nicholson. Open source on{" "}
                 <StyledLink
-                    href="www.github.com/crnicholson/website"
+                    href="https://github.com/crnicholson/website"
                 >
                     GitHub
                 </StyledLink>{" "}
