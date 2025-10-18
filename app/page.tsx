@@ -349,7 +349,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Carousel className="py-10" images={[
+      {/* <Carousel className="py-10" images={[
         { src: "/images/slider/arduino.jpeg", alt: "Arduino" },
         { src: "/images/slider/balloon.jpeg", alt: "Balloon" },
         { src: "/images/slider/cutdownMechanism.png", alt: "Cutdown mechanism" },
@@ -368,7 +368,7 @@ export default function Home() {
         { src: "/images/slider/stratoSoarMK1.jpeg", alt: "StratoSoar MK1" },
         { src: "/images/slider/stratoSoarMK2.png", alt: "StratoSoar MK2" },
         { src: "/images/slider/wing.png", alt: "Wing" },
-      ]} />
+      ]} /> */}
 
       <Footer />
     </>
